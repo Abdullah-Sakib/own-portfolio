@@ -1,3 +1,5 @@
+import hogwarts from "../../assets/hogwarts.avif";
+
 const HomeHeader = () => {
   return (
     <section className="text-gray-600 body-font container">
@@ -28,7 +30,7 @@ const HomeHeader = () => {
           <img
             className="object-cover object-center rounded h-full w-full  "
             alt="hero"
-            src="https://img.freepik.com/free-photo/architecture-dusk-famous-place-illuminated-by-generative-ai-generative-ai_188544-12598.jpg?size=626&ext=jpg&ga=GA1.1.1302705166.1689002717&semt=sph"
+            src={hogwarts}
           />
         </div>
       </div>

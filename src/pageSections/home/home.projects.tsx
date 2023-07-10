@@ -1,3 +1,5 @@
+import hogwarts from "../../assets/hogwarts.avif";
+
 const HomeProjects = () => {
   return (
     <section className="text-gray-600 body-font">
@@ -15,7 +17,7 @@ const HomeProjects = () => {
             <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
               <img
                 className="lg:h-48 md:h-36 w-full object-cover object-center"
-                src="https://img.freepik.com/free-photo/architecture-dusk-famous-place-illuminated-by-generative-ai-generative-ai_188544-12598.jpg?size=626&ext=jpg&ga=GA1.1.1302705166.1689002717&semt=sph"
+                src={hogwarts}
                 alt="blog"
               />
               <div className="p-6">
@@ -82,7 +84,7 @@ const HomeProjects = () => {
             <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
               <img
                 className="lg:h-48 md:h-36 w-full object-cover object-center"
-                src="https://img.freepik.com/free-photo/architecture-dusk-famous-place-illuminated-by-generative-ai-generative-ai_188544-12598.jpg?size=626&ext=jpg&ga=GA1.1.1302705166.1689002717&semt=sph"
+                src={hogwarts}
                 alt="blog"
               />
               <div className="p-6">
@@ -149,7 +151,7 @@ const HomeProjects = () => {
             <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
               <img
                 className="lg:h-48 md:h-36 w-full object-cover object-center"
-                src="https://img.freepik.com/free-photo/architecture-dusk-famous-place-illuminated-by-generative-ai-generative-ai_188544-12598.jpg?size=626&ext=jpg&ga=GA1.1.1302705166.1689002717&semt=sph"
+                src={hogwarts}
                 alt="blog"
               />
               <div className="p-6">

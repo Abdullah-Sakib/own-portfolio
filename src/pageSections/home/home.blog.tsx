@@ -1,3 +1,5 @@
+import hogwarts from "../../assets/hogwarts.avif";
+
 const HomeBlog = () => {
   return (
     <section className="text-gray-600 body-font">
@@ -21,7 +23,7 @@ const HomeBlog = () => {
             <div className="bg-gray-100 p-6 rounded-lg">
               <img
                 className="h-40 rounded w-full object-cover object-center mb-6"
-                src="https://img.freepik.com/free-photo/architecture-dusk-famous-place-illuminated-by-generative-ai-generative-ai_188544-12598.jpg?size=626&ext=jpg&ga=GA1.1.1302705166.1689002717&semt=sph"
+                src={hogwarts}
                 alt="content"
               />
               <h3 className="tracking-widest text-green-500 text-xs font-medium title-font">
@@ -40,7 +42,7 @@ const HomeBlog = () => {
             <div className="bg-gray-100 p-6 rounded-lg">
               <img
                 className="h-40 rounded w-full object-cover object-center mb-6"
-                src="https://img.freepik.com/free-photo/architecture-dusk-famous-place-illuminated-by-generative-ai-generative-ai_188544-12598.jpg?size=626&ext=jpg&ga=GA1.1.1302705166.1689002717&semt=sph"
+                src={hogwarts}
                 alt="content"
               />
               <h3 className="tracking-widest text-green-500 text-xs font-medium title-font">
@@ -59,7 +61,7 @@ const HomeBlog = () => {
             <div className="bg-gray-100 p-6 rounded-lg">
               <img
                 className="h-40 rounded w-full object-cover object-center mb-6"
-                src="https://img.freepik.com/free-photo/architecture-dusk-famous-place-illuminated-by-generative-ai-generative-ai_188544-12598.jpg?size=626&ext=jpg&ga=GA1.1.1302705166.1689002717&semt=sph"
+                src={hogwarts}
                 alt="content"
               />
               <h3 className="tracking-widest text-green-500 text-xs font-medium title-font">
@@ -78,7 +80,7 @@ const HomeBlog = () => {
             <div className="bg-gray-100 p-6 rounded-lg">
               <img
                 className="h-40 rounded w-full object-cover object-center mb-6"
-                src="https://img.freepik.com/free-photo/architecture-dusk-famous-place-illuminated-by-generative-ai-generative-ai_188544-12598.jpg?size=626&ext=jpg&ga=GA1.1.1302705166.1689002717&semt=sph"
+                src={hogwarts}
                 alt="content"
               />
               <h3 className="tracking-widest text-green-500 text-xs font-medium title-font">
