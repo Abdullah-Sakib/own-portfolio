@@ -9,7 +9,7 @@ const MainLayout = () => {
         <Sidebar />
       </aside>
 
-      <main className="w-[80vw]">
+      <main className="w-[80vw] scroll-smooth">
         <div className="">
           <div className="container">
             <Outlet />

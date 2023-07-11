@@ -2,7 +2,7 @@ import { ImMagicWand } from "react-icons/im";
 
 const HomeAboutMe = () => {
   return (
-    <section className="text-gray-600 body-font">
+    <section className="text-gray-600 body-font" id="about">
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-col text-center w-full mb-20">
           <h2 className="text-xs text-green-500 tracking-widest font-medium title-font mb-1">

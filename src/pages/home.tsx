@@ -7,14 +7,14 @@ import HomeTestimonial from "../pageSections/home/home.testimonial";
 
 const Home = () => {
   return (
-    <>
+    <div>
       <HomeHeader />
       <HomeAboutMe />
-      <HomeSkills />
       <HomeProjects />
+      <HomeSkills />
       <HomeBlog />
       <HomeTestimonial />
-    </>
+    </div>
   );
 };
 

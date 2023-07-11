@@ -108,7 +108,7 @@ const HomeSkills = () => {
     },
   ];
   return (
-    <section className="text-gray-600 body-font">
+    <section className="text-gray-600 body-font" id="skills">
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-wrap w-full mb-20">
           <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
@@ -119,8 +119,8 @@ const HomeSkills = () => {
           </div>
         </div>
         <div className="flex flex-wrap justify-between gap-3 -m-4 ">
-          {skills.map((skill) => (
-            <div className="w-28 p-4 rounded-lg bg-gray-100">
+          {skills.map((skill, i) => (
+            <div key={i} className="w-28 p-4 rounded-lg bg-gray-100">
               <a className="block h-4/6  relative p-2 overflow-hidden">
                 <img
                   alt="ecommerce"
