@@ -7,12 +7,6 @@ const MainLayout = () => {
     <div className="flex lg:border-[15px]  h-screen overflow-auto custom-scrollbar">
       <aside className="h-screen w-[20vw] sticky  top-0  border-r-[1px] border-green-400 border-opacity-40  overflow-auto custom-scrollbar-sidebar">
         <Sidebar />
-        <Sidebar />
-        <Sidebar />
-        <Sidebar />
-        <Sidebar />
-        <Sidebar />
-        <Sidebar />
       </aside>
 
       <main className="w-[80vw]">
