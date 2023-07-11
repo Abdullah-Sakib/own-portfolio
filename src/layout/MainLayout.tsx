@@ -4,7 +4,7 @@ import Footer from "../pageSections/shared/footer";
 
 const MainLayout = () => {
   return (
-    <div>
+    <div className="lg:border-[15px]  h-screen overflow-auto remove-scrollbar">
       <Navbar />
       <div className="container">
         <Outlet />
