@@ -11,15 +11,9 @@ const HomeBlog = () => {
             </h1>
             <div className="h-1 w-10 bg-green-500 rounded" />
           </div>
-          <p className="lg:w-1/2 w-full leading-relaxed text-gray-500">
-            Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-            gentrify, subway tile poke farm-to-table. Franzen you probably
-            haven't heard of them man bun deep jianbing selfies heirloom prism
-            food truck ugh squid celiac humblebrag.
-          </p>
         </div>
         <div className="flex flex-wrap -m-4">
-          <div className="xl:w-1/4 md:w-1/2 p-4">
+          <div className="xl:w-1/3 md:w-1/2 p-4">
             <div className="bg-gray-100 p-6 rounded-lg">
               <img
                 className="h-40 rounded w-full object-cover object-center mb-6"
@@ -38,7 +32,7 @@ const HomeBlog = () => {
               </p>
             </div>
           </div>
-          <div className="xl:w-1/4 md:w-1/2 p-4">
+          <div className="xl:w-1/3 md:w-1/2 p-4">
             <div className="bg-gray-100 p-6 rounded-lg">
               <img
                 className="h-40 rounded w-full object-cover object-center mb-6"
@@ -57,7 +51,7 @@ const HomeBlog = () => {
               </p>
             </div>
           </div>
-          <div className="xl:w-1/4 md:w-1/2 p-4">
+          <div className="xl:w-1/3 md:w-1/2 p-4">
             <div className="bg-gray-100 p-6 rounded-lg">
               <img
                 className="h-40 rounded w-full object-cover object-center mb-6"
@@ -76,7 +70,7 @@ const HomeBlog = () => {
               </p>
             </div>
           </div>
-          <div className="xl:w-1/4 md:w-1/2 p-4">
+          <div className="xl:w-1/3 md:w-1/2 p-4">
             <div className="bg-gray-100 p-6 rounded-lg">
               <img
                 className="h-40 rounded w-full object-cover object-center mb-6"
