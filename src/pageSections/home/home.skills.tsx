@@ -120,7 +120,7 @@ const HomeSkills = () => {
         </div>
         <div className="flex flex-wrap justify-between gap-3 -m-4 ">
           {skills.map((skill, i) => (
-            <div key={i} className="w-28 p-4 rounded-lg bg-gray-100">
+            <div key={i} className="w-24 p-4 rounded-lg bg-gray-100">
               <a className="block h-4/6  relative p-2 overflow-hidden">
                 <img
                   alt="ecommerce"
@@ -129,7 +129,7 @@ const HomeSkills = () => {
                 />
               </a>
               <div className="mt-3 text-center">
-                <h3 className="text-gray-500 text-base  title-font mb-1">
+                <h3 className="text-gray-500 text-[13px]  title-font mb-1">
                   {skill.name}
                 </h3>
               </div>

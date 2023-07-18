@@ -4,14 +4,14 @@ import Sidebar from "./sidebar";
 
 const MainLayout = () => {
   return (
-    <div className="flex lg:border-[15px]  h-screen overflow-auto custom-scrollbar">
+    <div className="flex  custom-scrollbar">
       <aside className="h-screen w-[20vw] sticky  top-0  border-r-[1px] border-green-400 border-opacity-40  overflow-auto custom-scrollbar-sidebar">
         <Sidebar />
       </aside>
 
       <main className="w-[80vw] scroll-smooth">
-        <div className="">
-          <div className="container">
+        <div>
+          <div className="container" id="scrollable-container">
             <Outlet />
           </div>
           <Footer />
