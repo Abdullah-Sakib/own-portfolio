@@ -13,7 +13,7 @@ const ScrollSpy = (targetIds: string[]): string => {
       // Find the section that is currently in view
       for (let i = targetIds.length - 1; i >= 0; i--) {
         const section = document.getElementById(targetIds[i]);
-        if (section && section.offsetTop <= scrollTop) {
+        if (section && section.offsetTop - 20 <= scrollTop) {
           currentSection = targetIds[i];
           break;
         }
