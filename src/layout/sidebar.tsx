@@ -83,7 +83,7 @@ const Sidebar = () => {
             className={`flex items-center gap-5  pl-10 py-3 text-black dark:text-neutral-500 cursor-pointer`}
           >
             <span
-              className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300  ${
+              className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300 p-[5px]  ${
                 active === "home" ? "bg-emerald-400 text-white" : ""
               } dark:bg-primary `}
             >
@@ -97,7 +97,7 @@ const Sidebar = () => {
             className="flex items-center gap-5 pl-10 py-3 text-black dark:text-neutral-500"
           >
             <span
-              className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300  ${
+              className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300 p-[5px] ${
                 active === "about" ? "bg-emerald-400 text-white" : " "
               } dark:bg-primary `}
             >
@@ -111,7 +111,7 @@ const Sidebar = () => {
             className="flex items-center gap-5 pl-10 py-3 text-black dark:text-neutral-500"
           >
             <span
-              className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300  ${
+              className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300 p-[5px] ${
                 active === "project" ? "bg-emerald-400 text-white" : ""
               } dark:bg-primary `}
             >
@@ -125,7 +125,7 @@ const Sidebar = () => {
             className="flex items-center gap-5 pl-10 py-3 text-black dark:text-neutral-500"
           >
             <span
-              className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300  ${
+              className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300 p-[5px] ${
                 active === "skills" ? "bg-emerald-400 text-white" : " "
               } dark:bg-primary `}
             >
@@ -139,7 +139,7 @@ const Sidebar = () => {
             className="flex items-center gap-5 pl-10 py-3 text-black dark:text-neutral-500"
           >
             <span
-              className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300  ${
+              className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300 p-[5px] ${
                 active === "blog" ? "bg-emerald-400 text-white" : " "
               } dark:bg-primary `}
             >
@@ -153,7 +153,7 @@ const Sidebar = () => {
             className="flex items-center gap-5 pl-10 py-3 text-black dark:text-neutral-500"
           >
             <span
-              className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300  ${
+              className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300 p-[5px] ${
                 active === "testimonials" ? "bg-emerald-400 text-white" : " "
               } dark:bg-primary `}
             >
@@ -167,7 +167,7 @@ const Sidebar = () => {
             className="flex items-center gap-5 pl-10 py-3 text-black dark:text-neutral-500"
           >
             <span
-              className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300  ${
+              className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300 p-[5px] ${
                 active === "contact" ? "bg-emerald-400 text-white" : ""
               } dark:bg-primary `}
             >
