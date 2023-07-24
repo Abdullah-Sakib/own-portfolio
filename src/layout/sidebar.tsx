@@ -34,7 +34,7 @@ const Sidebar = () => {
 
   return (
     <div>
-      <Avatar className="w-32 h-32 bg-black mx-auto mt-5 ">
+      <Avatar className="w-32 h-32 bg-gray-900 mx-auto mt-5 ">
         <AvatarImage
           src="https://avatars.githubusercontent.com/u/108396938?s=400&u=5cdd7fc9548080b1947f106179a2dc868f792aeb&v=4"
           alt="@shadcn"
@@ -77,7 +77,7 @@ const Sidebar = () => {
       {/* Section navigations start */}
       <nav className="mt-3">
         <h3 className="pl-4">Sections</h3>
-        <ul className="flex flex-col mt-4 text-sm " id="mainNav">
+        <ul className="flex flex-col mt-4 text-sm ">
           <a
             href="#home"
             className={`flex items-center gap-5  pl-10 py-3 text-gray-700 cursor-pointer`}

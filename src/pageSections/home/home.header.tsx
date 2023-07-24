@@ -11,14 +11,14 @@ const HomeHeader = () => {
   return (
     <section
       id="home"
-      className="min-h-[100vh] flex justify-center items-center p-4 pt-20 sm:pt-0"
+      className="min-h-[100vh] flex justify-center items-center p-4 pt-20 sm:pt-0 text-gray-700"
     >
       <div>
         <div className=" text-center space-y-3">
           <span className="bg-[#293959]" />
           <div className="text-xl md:text-4xl lg:text-6xl font-light ">
             <div style={{ opacity: 1 }}>
-              <h3 className="text-xl sm:text-3xl">
+              <h3 className="text-xl sm:text-3xl text-gray-700">
                 <span
                   className="inline-block false"
                   style={{ opacity: 1, transform: "none" }}
@@ -178,7 +178,7 @@ const HomeHeader = () => {
                   b
                 </span>
               </h1>
-              <h1 className="text-5xl mt-2 lg:text-7xl font-extrabold">
+              <h1 className="text-5xl mt-4 lg:text-7xl font-extrabold text-gray-700">
                 <span
                   className="inline-block false"
                   style={{ opacity: 1, transform: "none" }}
@@ -302,7 +302,7 @@ const HomeHeader = () => {
               </h1>
             </div>
           </div>
-          <p className="text-xs sm:text-base pt-4">
+          <p className="text-xs sm:text-base pt-4 text-gray-700">
             As a passionate MERN stack developer with a deep love for coding and
             a keen eye for design, I create web applications that combine
             functionality and aesthetics. Explore my projects, delve into my
@@ -351,7 +351,7 @@ const HomeHeader = () => {
           </a>
           <a href="https://github.com/Abdullah-Sakib" target="_blank">
             <div className=" cursor-pointer hover:scale-110 duration-200">
-              <BiLogoGithub className="text-3xl" />
+              <BiLogoGithub className="text-3xl text-black" />
             </div>
           </a>
 

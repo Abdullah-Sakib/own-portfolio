@@ -108,11 +108,11 @@ html {
 }
 
 .custom-scrollbar-sidebar::-webkit-scrollbar {
-  width: 5px;
-  height: 50px;
+  width: 3px;
+  display: none;
 }
 
 .custom-scrollbar-sidebar::-webkit-scrollbar-thumb {
   background-color: #54de5d;
-  border-radius: 10px;
+  border-radius: 30px;
 }
