@@ -11,10 +11,12 @@ import {
 import { AiFillFolderOpen } from "react-icons/ai";
 import { RiListSettingsLine, RiContactsLine } from "react-icons/ri";
 import { VscFeedback } from "react-icons/vsc";
-import { BsFillFileTextFill, BsFileEarmarkRichtextFill } from "react-icons/bs";
+import { BsFileEarmarkRichtextFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import ScrollSpy from "../helpers/scrollSpy";
 import { useEffect, useState } from "react";
+import { LuBook } from "react-icons/lu";
+import { HiOutlineDocumentText } from "react-icons/hi2";
 
 const Sidebar = () => {
   const [active, setActive] = useState("");
@@ -153,7 +155,7 @@ const Sidebar = () => {
                   : " bg-gray-500/10 "
               } dark:bg-primary `}
             >
-              <BsFileEarmarkRichtextFill className="text-xl" />
+              <LuBook className="text-xl" />
             </span>
             <span>Blogs</span>
           </a>
@@ -207,7 +209,7 @@ const Sidebar = () => {
                 active === "resume" ? "bg-emerald-400 text-white" : " "
               } dark:bg-primary`}
             >
-              <BsFillFileTextFill className="text-xl" />
+              <HiOutlineDocumentText className="text-xl" />
             </span>
 
             <span>Resume</span>
@@ -223,7 +225,7 @@ const Sidebar = () => {
                 active === "blogs" ? "bg-emerald-400 text-white" : " "
               } dark:bg-primary`}
             >
-              <BsFileEarmarkRichtextFill className="text-xl" />
+              <LuBook className="text-xl" />
             </span>
 
             <span>Blogs</span>
