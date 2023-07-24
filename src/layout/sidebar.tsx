@@ -80,11 +80,13 @@ const Sidebar = () => {
         <ul className="flex flex-col mt-4 text-sm " id="mainNav">
           <a
             href="#home"
-            className={`flex items-center gap-5  pl-10 py-3 text-black dark:text-neutral-500 cursor-pointer`}
+            className={`flex items-center gap-5  pl-10 py-3 text-gray-700 cursor-pointer`}
           >
             <span
-              className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300 p-[5px]  ${
-                active === "home" ? "bg-emerald-400 text-white" : ""
+              className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300 p-[5px] ${
+                active === "home"
+                  ? "bg-emerald-400 text-white"
+                  : "bg-gray-500/10 "
               } dark:bg-primary `}
             >
               <BiHomeSmile className="text-xl" />
@@ -94,11 +96,13 @@ const Sidebar = () => {
 
           <a
             href="#about"
-            className="flex items-center gap-5 pl-10 py-3 text-black dark:text-neutral-500"
+            className="flex items-center gap-5 pl-10 py-3 text-gray-700 dark:text-neutral-500"
           >
             <span
               className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300 p-[5px] ${
-                active === "about" ? "bg-emerald-400 text-white" : " "
+                active === "about"
+                  ? "bg-emerald-400 text-white"
+                  : "bg-gray-500/10  "
               } dark:bg-primary `}
             >
               <BiUserCircle className="text-2xl" />
@@ -108,11 +112,13 @@ const Sidebar = () => {
 
           <a
             href="#project"
-            className="flex items-center gap-5 pl-10 py-3 text-black dark:text-neutral-500"
+            className="flex items-center gap-5 pl-10 py-3 text-gray-700 dark:text-neutral-500"
           >
             <span
               className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300 p-[5px] ${
-                active === "project" ? "bg-emerald-400 text-white" : ""
+                active === "project"
+                  ? "bg-emerald-400 text-white"
+                  : "bg-gray-500/10 "
               } dark:bg-primary `}
             >
               <AiFillFolderOpen className="text-xl" />
@@ -122,11 +128,13 @@ const Sidebar = () => {
 
           <a
             href="#skills"
-            className="flex items-center gap-5 pl-10 py-3 text-black dark:text-neutral-500"
+            className="flex items-center gap-5 pl-10 py-3 text-gray-700 dark:text-neutral-500"
           >
             <span
               className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300 p-[5px] ${
-                active === "skills" ? "bg-emerald-400 text-white" : " "
+                active === "skills"
+                  ? "bg-emerald-400 text-white"
+                  : " bg-gray-500/10 "
               } dark:bg-primary `}
             >
               <RiListSettingsLine className="text-xl" />
@@ -136,11 +144,13 @@ const Sidebar = () => {
 
           <a
             href="#blog"
-            className="flex items-center gap-5 pl-10 py-3 text-black dark:text-neutral-500"
+            className="flex items-center gap-5 pl-10 py-3 text-gray-700 dark:text-neutral-500"
           >
             <span
               className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300 p-[5px] ${
-                active === "blog" ? "bg-emerald-400 text-white" : " "
+                active === "blog"
+                  ? "bg-emerald-400 text-white"
+                  : " bg-gray-500/10 "
               } dark:bg-primary `}
             >
               <BsFileEarmarkRichtextFill className="text-xl" />
@@ -150,11 +160,13 @@ const Sidebar = () => {
 
           <a
             href="#testimonials"
-            className="flex items-center gap-5 pl-10 py-3 text-black dark:text-neutral-500"
+            className="flex items-center gap-5 pl-10 py-3 text-gray-700 dark:text-neutral-500"
           >
             <span
               className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300 p-[5px] ${
-                active === "testimonials" ? "bg-emerald-400 text-white" : " "
+                active === "testimonials"
+                  ? "bg-emerald-400 text-white"
+                  : " bg-gray-500/10 "
               } dark:bg-primary `}
             >
               <VscFeedback className="text-xl" />
@@ -164,11 +176,13 @@ const Sidebar = () => {
 
           <a
             href="#contact"
-            className="flex items-center gap-5 pl-10 py-3 text-black dark:text-neutral-500"
+            className="flex items-center gap-5 pl-10 py-3 text-gray-700 dark:text-neutral-500"
           >
             <span
               className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300 p-[5px] ${
-                active === "contact" ? "bg-emerald-400 text-white" : ""
+                active === "contact"
+                  ? "bg-emerald-400 text-white"
+                  : "bg-gray-500/10 "
               } dark:bg-primary `}
             >
               <RiContactsLine className="text-xl" />
