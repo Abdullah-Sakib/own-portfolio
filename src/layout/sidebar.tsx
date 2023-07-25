@@ -107,7 +107,7 @@ const Sidebar = () => {
               className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300 p-[5px] ${
                 active === "about"
                   ? "bg-emerald-400 text-white"
-                  : "bg-gray-500/10  "
+                  : "bg-emerald-500/10  "
               } dark:bg-primary `}
             >
               <BiUserCircle className="text-2xl" />
@@ -143,7 +143,7 @@ const Sidebar = () => {
               className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300 p-[5px] ${
                 active === "skills"
                   ? "bg-emerald-400 text-white"
-                  : " bg-gray-500/10 "
+                  : " bg-emerald-500/10 "
               } dark:bg-primary `}
             >
               <RiListSettingsLine className="text-xl" />
@@ -161,7 +161,7 @@ const Sidebar = () => {
               className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300 p-[5px] ${
                 active === "blog"
                   ? "bg-emerald-400 text-white"
-                  : " bg-gray-500/10 "
+                  : " bg-emerald-500/10 "
               } dark:bg-primary `}
             >
               <LuBook className="text-xl" />
@@ -179,7 +179,7 @@ const Sidebar = () => {
               className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300 p-[5px] ${
                 active === "testimonials"
                   ? "bg-emerald-400 text-white"
-                  : " bg-gray-500/10 "
+                  : " bg-emerald-500/10 "
               } dark:bg-primary `}
             >
               <VscFeedback className="text-xl" />
@@ -197,7 +197,7 @@ const Sidebar = () => {
               className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300 p-[5px] ${
                 active === "contact"
                   ? "bg-emerald-400 text-white"
-                  : "bg-gray-500/10 "
+                  : "bg-emerald-500/10 "
               } dark:bg-primary `}
             >
               <RiContactsLine className="text-xl" />
@@ -221,7 +221,9 @@ const Sidebar = () => {
           >
             <span
               className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300  ${
-                active === "resume" ? "bg-emerald-400 text-white" : " "
+                active === "resume"
+                  ? "bg-emerald-400 text-white"
+                  : "bg-emerald-500/10  "
               } dark:bg-primary`}
             >
               <HiOutlineDocumentText className="text-xl" />
@@ -239,7 +241,9 @@ const Sidebar = () => {
           >
             <span
               className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300  ${
-                active === "blogs" ? "bg-emerald-400 text-white" : " "
+                active === "blogs"
+                  ? "bg-emerald-400 text-white"
+                  : "bg-emerald-500/10  "
               } dark:bg-primary`}
             >
               <LuBook className="text-xl" />
