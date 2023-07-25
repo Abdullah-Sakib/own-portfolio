@@ -11,7 +11,6 @@ import {
 import { AiFillFolderOpen } from "react-icons/ai";
 import { RiListSettingsLine, RiContactsLine } from "react-icons/ri";
 import { VscFeedback } from "react-icons/vsc";
-import { BsFileEarmarkRichtextFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import ScrollSpy from "../helpers/scrollSpy";
 import { useEffect, useState } from "react";
@@ -82,13 +81,15 @@ const Sidebar = () => {
         <ul className="flex flex-col mt-4 text-sm ">
           <a
             href="#home"
-            className={`flex items-center gap-5  pl-10 py-3 text-gray-700 cursor-pointer`}
+            className={`flex items-center duration-300 gap-5 pl-10 py-3 text-gray-700 cursor-pointer ${
+              active === "home" ? "bg-emerald-500/10" : ""
+            }`}
           >
             <span
               className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300 p-[5px] ${
                 active === "home"
                   ? "bg-emerald-400 text-white"
-                  : "bg-gray-500/10 "
+                  : "bg-emerald-500/10 "
               } dark:bg-primary `}
             >
               <BiHomeSmile className="text-xl" />
@@ -98,7 +99,9 @@ const Sidebar = () => {
 
           <a
             href="#about"
-            className="flex items-center gap-5 pl-10 py-3 text-gray-700 dark:text-neutral-500"
+            className={`flex items-center duration-300 gap-5 pl-10 py-3 text-gray-700 dark:text-neutral-500 ${
+              active === "about" ? "bg-emerald-500/10" : ""
+            }`}
           >
             <span
               className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300 p-[5px] ${
@@ -114,7 +117,9 @@ const Sidebar = () => {
 
           <a
             href="#project"
-            className="flex items-center gap-5 pl-10 py-3 text-gray-700 dark:text-neutral-500"
+            className={`flex items-center duration-300 gap-5 pl-10 py-3 text-gray-700 dark:text-neutral-500 ${
+              active === "project" ? "bg-emerald-500/10" : ""
+            }`}
           >
             <span
               className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300 p-[5px] ${
@@ -130,7 +135,9 @@ const Sidebar = () => {
 
           <a
             href="#skills"
-            className="flex items-center gap-5 pl-10 py-3 text-gray-700 dark:text-neutral-500"
+            className={`flex items-center duration-300 gap-5 pl-10 py-3 text-gray-700 dark:text-neutral-500 ${
+              active === "skills" ? "bg-emerald-500/10" : ""
+            }`}
           >
             <span
               className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300 p-[5px] ${
@@ -146,7 +153,9 @@ const Sidebar = () => {
 
           <a
             href="#blog"
-            className="flex items-center gap-5 pl-10 py-3 text-gray-700 dark:text-neutral-500"
+            className={`flex items-center duration-300 gap-5 pl-10 py-3 text-gray-700 dark:text-neutral-500 ${
+              active === "blog" ? "bg-emerald-500/10" : ""
+            }`}
           >
             <span
               className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300 p-[5px] ${
@@ -162,7 +171,9 @@ const Sidebar = () => {
 
           <a
             href="#testimonials"
-            className="flex items-center gap-5 pl-10 py-3 text-gray-700 dark:text-neutral-500"
+            className={`flex items-center duration-300 gap-5 pl-10 py-3 text-gray-700 dark:text-neutral-500 ${
+              active === "testimonials" ? "bg-emerald-500/10" : ""
+            }`}
           >
             <span
               className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300 p-[5px] ${
@@ -178,7 +189,9 @@ const Sidebar = () => {
 
           <a
             href="#contact"
-            className="flex items-center gap-5 pl-10 py-3 text-gray-700 dark:text-neutral-500"
+            className={`flex items-center duration-300 gap-5 pl-10 py-3 text-gray-700 dark:text-neutral-500 ${
+              active === "contact" ? "bg-emerald-500/10" : ""
+            }`}
           >
             <span
               className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300 p-[5px] ${
@@ -202,7 +215,9 @@ const Sidebar = () => {
           <Link
             to="/resume"
             onClick={() => setActive("resume")}
-            className={`flex items-center gap-5 pl-10 py-3 text-black dark:text-neutral-500 `}
+            className={`flex items-center duration-300 gap-5 pl-10 py-3 text-black dark:text-neutral-500 ${
+              active === "resume" ? "bg-emerald-500/10" : ""
+            }`}
           >
             <span
               className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300  ${
@@ -218,7 +233,9 @@ const Sidebar = () => {
           <Link
             to="/blogs"
             onClick={() => setActive("blogs")}
-            className={`flex items-center gap-5 pl-10 py-3 text-black dark:text-neutral-500 mb-16`}
+            className={`flex duration-300 items-center gap-5 pl-10 py-3 text-black dark:text-neutral-500 mb-16  ${
+              active === "blogs" ? "bg-emerald-500/10" : ""
+            }`}
           >
             <span
               className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300  ${
