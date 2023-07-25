@@ -28,9 +28,9 @@ const HomeProjects = () => {
     {
       title: "Best Buy",
       subTitle: "Used laptop buy and sale related E- commerce website",
-      liveLink: "https://best-buy-be3c4.web.app/",
-      clientSide: "https://github.com/RakibMojumder/Best-buy-client",
-      serverSide: "https://github.com/RakibMojumder/Best-buy-server",
+      liveLink: "https://make-better-use.netlify.app/",
+      clientSide: "https://github.com/Abdullah-Sakib",
+      serverSide: "https://github.com/Abdullah-Sakib",
       features: [
         "Users can filter products by categories and can buy products and give reviews. As a payment system stripe is used here.",
         "An admin can verify a user or seller & a user or seller can be an admin if an admin allows also an admin can remove a user or seller.",
@@ -56,9 +56,9 @@ const HomeProjects = () => {
     {
       title: "Best Buy",
       subTitle: "Used laptop buy and sale related E- commerce website",
-      liveLink: "https://best-buy-be3c4.web.app/",
-      clientSide: "https://github.com/RakibMojumder/Best-buy-client",
-      serverSide: "https://github.com/RakibMojumder/Best-buy-server",
+      liveLink: "https://make-better-use.netlify.app/",
+      clientSide: "https://github.com/Abdullah-Sakib",
+      serverSide: "https://github.com/Abdullah-Sakib",
       features: [
         "Users can filter products by categories and can buy products and give reviews. As a payment system stripe is used here.",
         "An admin can verify a user or seller & a user or seller can be an admin if an admin allows also an admin can remove a user or seller.",
@@ -84,9 +84,9 @@ const HomeProjects = () => {
     {
       title: "Best Buy",
       subTitle: "Used laptop buy and sale related E- commerce website",
-      liveLink: "https://best-buy-be3c4.web.app/",
-      clientSide: "https://github.com/RakibMojumder/Best-buy-client",
-      serverSide: "https://github.com/RakibMojumder/Best-buy-server",
+      liveLink: "https://make-better-use.netlify.app/",
+      clientSide: "https://github.com/Abdullah-Sakib",
+      serverSide: "https://github.com/Abdullah-Sakib",
       features: [
         "Users can filter products by categories and can buy products and give reviews. As a payment system stripe is used here.",
         "An admin can verify a user or seller & a user or seller can be an admin if an admin allows also an admin can remove a user or seller.",
@@ -112,9 +112,9 @@ const HomeProjects = () => {
     {
       title: "Best Buy",
       subTitle: "Used laptop buy and sale related E- commerce website",
-      liveLink: "https://best-buy-be3c4.web.app/",
-      clientSide: "https://github.com/RakibMojumder/Best-buy-client",
-      serverSide: "https://github.com/RakibMojumder/Best-buy-server",
+      liveLink: "https://make-better-use.netlify.app/",
+      clientSide: "https://github.com/Abdullah-Sakib",
+      serverSide: "https://github.com/Abdullah-Sakib",
       features: [
         "Users can filter products by categories and can buy products and give reviews. As a payment system stripe is used here.",
         "An admin can verify a user or seller & a user or seller can be an admin if an admin allows also an admin can remove a user or seller.",
@@ -144,10 +144,13 @@ const HomeProjects = () => {
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-wrap w-full mb-20">
           <div className="w-full mb-6 lg:mb-0">
-            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
+            <h1
+              className="text-center font-extrabold text-4xl sm:text-5xl uppercase text-gray-700 pt-4"
+              style={{ transform: "none" }}
+            >
+              <span className="text-emerald-500 dark:text-primary">My</span>{" "}
               Projects
             </h1>
-            <div className="h-1 w-16 bg-green-500 rounded" />
           </div>
         </div>
 
@@ -294,8 +297,6 @@ const HomeProjects = () => {
           ))}
         </div>
       </div>
-
-      <section></section>
     </section>
   );
 };

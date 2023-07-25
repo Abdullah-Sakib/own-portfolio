@@ -2,8 +2,13 @@ const HomeTestimonial = () => {
   return (
     <section className="text-gray-600 body-font mb-32" id="testimonials">
       <div className="container px-5 py-24 mx-auto">
-        <h1 className="text-3xl font-medium title-font text-gray-900 mb-12 text-center">
-          Testimonials
+        <h1
+          className="text-center font-extrabold text-4xl sm:text-5xl  mb-12  uppercase text-gray-700 pt-4"
+          style={{ transform: "none" }}
+        >
+          <span className="text-emerald-500 dark:text-primary">
+            Testimonials
+          </span>{" "}
         </h1>
         <div className="flex flex-wrap -m-4">
           <div className="p-4 md:w-1/2 w-full">

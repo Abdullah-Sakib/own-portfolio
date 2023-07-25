@@ -319,7 +319,7 @@ const HomeHeader = () => {
             <span>See Resume</span>
           </a>
           <a
-            href="mailto:sujonahmed45a4@gmail.com"
+            href="mailto:abdullahsakib888@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
             className="px-8 py-1 flex items-center gap-3 underline relative before:absolute before:top-0 before:left-0 before:h-0 before:w-0 before:border-transparent before:border-l before:border-t after:absolute after:bottom-0 after:right-0 after:h-0 after:w-0 after:border-r after:border-b before:transition-all before:duration-500 ease-linear hover:before:h-full hover:before:w-full hover:before:border-emerald-500 dark:hover:before:border-primary after:border-transparent after:transition-all after:duration-500 after:ease-linear hover:after:h-full hover:after:w-full hover:after:border-emerald-500 dark:hover:after:border-primary"

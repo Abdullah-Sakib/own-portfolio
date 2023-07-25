@@ -111,18 +111,21 @@ const HomeSkills = () => {
     <section className="text-gray-600 body-font" id="skills">
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-wrap w-full mb-20">
-          <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
-            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
+          <div className=" w-full mb-6 lg:mb-0">
+            <h1
+              className="text-center font-extrabold text-4xl sm:text-5xl uppercase text-gray-700 pt-4"
+              style={{ transform: "none" }}
+            >
+              <span className="text-emerald-500 dark:text-primary">My</span>{" "}
               Skills
             </h1>
-            <div className="h-1 w-10 bg-green-500 rounded" />
           </div>
         </div>
         <div className="flex flex-wrap justify-between gap-3 -m-4 ">
           {skills.map((skill, i) => (
             <div
               key={i}
-              className="w-24 p-4 shadow-md cursor-pointer rounded-lg bg-gray-100"
+              className="w-20 p-2 shadow-md cursor-pointer rounded-lg bg-gray-100"
             >
               <a className="block h-4/6  relative p-2 overflow-hidden">
                 <img
