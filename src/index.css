@@ -109,7 +109,7 @@ html {
 
 .custom-scrollbar-sidebar::-webkit-scrollbar {
   width: 3px;
-  display: none;
+  /* display: none; */
 }
 
 .custom-scrollbar-sidebar::-webkit-scrollbar-thumb {

@@ -26,6 +26,7 @@ const Sidebar = () => {
     "skills",
     "blog",
     "testimonials",
+    "contact",
   ];
 
   let activeSection = ScrollSpy(targetIds);
@@ -125,7 +126,7 @@ const Sidebar = () => {
               className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300 p-[5px] ${
                 active === "project"
                   ? "bg-emerald-400 text-white"
-                  : "bg-gray-500/10 "
+                  : "bg-emerald-500/10 "
               } dark:bg-primary `}
             >
               <AiFillFolderOpen className="text-xl" />
@@ -143,7 +144,7 @@ const Sidebar = () => {
               className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300 p-[5px] ${
                 active === "skills"
                   ? "bg-emerald-400 text-white"
-                  : " bg-emerald-500/10 "
+                  : " bg-emerald-500/10"
               } dark:bg-primary `}
             >
               <RiListSettingsLine className="text-xl" />
