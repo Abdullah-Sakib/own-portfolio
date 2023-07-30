@@ -3,7 +3,7 @@ import BasharVai from "../../assets/bashar.png";
 
 const HomeTestimonial = () => {
   return (
-    <section className="text-gray-600 body-font mb-32" id="testimonials">
+    <section className="text-gray-600 body-font " id="testimonials">
       <div className="container px-5 py-24 mx-auto">
         <h1
           className="text-center font-extrabold text-4xl sm:text-5xl  mb-12  uppercase text-gray-700 pt-4"
