@@ -19,6 +19,7 @@ import vercel from "../../assets/skills/vercel.png";
 import sass from "../../assets/skills/sass.png";
 import mongoose from "../../assets/skills/mongoose.png";
 import rtkQuery from "../../assets/skills/rtk-query.jpg";
+import next from "../../assets/skills/next.png";
 
 const HomeSkills = () => {
   const skills = [
@@ -57,6 +58,10 @@ const HomeSkills = () => {
     {
       name: "React",
       image: react,
+    },
+    {
+      name: "Next.js",
+      image: next,
     },
     {
       name: "Redux",
@@ -125,9 +130,9 @@ const HomeSkills = () => {
           {skills.map((skill, i) => (
             <div
               key={i}
-              className="w-20 p-2 shadow-md cursor-pointer rounded-lg bg-gray-100"
+              className="w-20 p-2 shadow-md cursor-pointer rounded-lg bg-gray-200/50"
             >
-              <a className="block h-4/6  relative p-2 overflow-hidden">
+              <a className="block h-4/6 relative p-2 overflow-hidden">
                 <img
                   alt="ecommerce"
                   className="object-contain object-center rounded-lg w-full h-full block "

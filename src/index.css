@@ -96,7 +96,8 @@ html {
 
 :root::-webkit-scrollbar-thumb {
   border-radius: 8px;
-  background-color: #fff;
+  background-color: #10b981;
+  /* background-color: #fff;
   background-image: -webkit-gradient(
     linear,
     40% 0%,
@@ -104,7 +105,7 @@ html {
     from(#4d9c41),
     to(#19911d),
     color-stop(0.6, #54de5d)
-  );
+  ); */
 }
 
 .custom-scrollbar-sidebar::-webkit-scrollbar {
