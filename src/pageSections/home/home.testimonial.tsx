@@ -1,5 +1,6 @@
 import { FaQuoteRight } from "react-icons/fa";
 import BasharVai from "../../assets/bashar.png";
+import threew from "../../assets/3w.png";
 
 const HomeTestimonial = () => {
   return (
@@ -43,22 +44,23 @@ const HomeTestimonial = () => {
             <div className="h-full bg-emerald-200/10 duration-300 p-8 rounded border-2 border-emerald-500">
               <FaQuoteRight className="block w-5 h-5 text-emerald-400 mb-4" />
               <p className="leading-relaxed mb-6">
-                Working with Abdullah sakib was a pleasure. His expertise in the
-                MERN stack and attention to detail was instrumental in
-                delivering our project on time and within budget.
+                During the Internship, Abdullah Sakib contributed as a member of
+                the Development team with a deep focus on Front-End. Abdullah
+                Sakib was sincere and his temperament at the workplace was
+                excellent.
               </p>
               <a className="inline-flex items-center">
                 <img
                   alt="testimonial"
-                  src={BasharVai}
-                  className="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"
+                  src={threew}
+                  className="w-12 h-12 rounded-full  flex-shrink-0 object-cover object-center"
                 />
                 <span className="flex-grow flex flex-col pl-4">
                   <span className="title-font font-medium text-gray-900">
-                    Abul Bashar
+                    3W Business Private Limited
                   </span>
                   <span className="text-gray-500 text-sm">
-                    Head of Front-end at 3W
+                    Web Development Agency
                   </span>
                 </span>
               </a>

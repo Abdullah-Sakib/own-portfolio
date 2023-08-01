@@ -11,13 +11,14 @@ import {
 import { AiFillFolderOpen } from "react-icons/ai";
 import { RiListSettingsLine, RiContactsLine } from "react-icons/ri";
 import { VscFeedback } from "react-icons/vsc";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import ScrollSpy from "../helpers/scrollSpy";
 import { useEffect, useState } from "react";
 import { LuBook } from "react-icons/lu";
 import { HiOutlineDocumentText } from "react-icons/hi2";
 
 const Sidebar = () => {
+  const navigate = useNavigate();
   const [active, setActive] = useState("");
   const targetIds = [
     "home",
@@ -82,6 +83,7 @@ const Sidebar = () => {
         <ul className="flex flex-col mt-4 text-sm ">
           <a
             href="#home"
+            onClick={() => navigate("/")}
             className={`flex items-center duration-300 gap-5 pl-10 py-3 text-gray-700 cursor-pointer ${
               active === "home" ? "bg-emerald-500/10" : ""
             }`}
@@ -100,6 +102,7 @@ const Sidebar = () => {
 
           <a
             href="#about"
+            onClick={() => navigate("/")}
             className={`flex items-center duration-300 gap-5 pl-10 py-3 text-gray-700 dark:text-neutral-500 ${
               active === "about" ? "bg-emerald-500/10" : ""
             }`}
@@ -118,6 +121,7 @@ const Sidebar = () => {
 
           <a
             href="#project"
+            onClick={() => navigate("/")}
             className={`flex items-center duration-300 gap-5 pl-10 py-3 text-gray-700 dark:text-neutral-500 ${
               active === "project" ? "bg-emerald-500/10" : ""
             }`}
@@ -136,6 +140,7 @@ const Sidebar = () => {
 
           <a
             href="#skills"
+            onClick={() => navigate("/")}
             className={`flex items-center duration-300 gap-5 pl-10 py-3 text-gray-700 dark:text-neutral-500 ${
               active === "skills" ? "bg-emerald-500/10" : ""
             }`}
@@ -154,6 +159,7 @@ const Sidebar = () => {
 
           <a
             href="#blog"
+            onClick={() => navigate("/")}
             className={`flex items-center duration-300 gap-5 pl-10 py-3 text-gray-700 dark:text-neutral-500 ${
               active === "blog" ? "bg-emerald-500/10" : ""
             }`}
@@ -172,6 +178,7 @@ const Sidebar = () => {
 
           <a
             href="#testimonials"
+            onClick={() => navigate("/")}
             className={`flex items-center duration-300 gap-5 pl-10 py-3 text-gray-700 dark:text-neutral-500 ${
               active === "testimonials" ? "bg-emerald-500/10" : ""
             }`}
@@ -190,6 +197,7 @@ const Sidebar = () => {
 
           <a
             href="#contact"
+            onClick={() => navigate("/")}
             className={`flex items-center duration-300 gap-5 pl-10 py-3 text-gray-700 dark:text-neutral-500 ${
               active === "contact" ? "bg-emerald-500/10" : ""
             }`}

@@ -156,8 +156,8 @@ const HomeProjects = () => {
 
         <div className="flex flex-wrap -m-4">
           {projectData?.map((project, idx) => (
-            <div className="p-4 md:w-1/4">
-              <div key={idx} className="h-full overflow-hidden">
+            <div key={idx} className="p-4 md:w-1/4">
+              <div className="h-full overflow-hidden">
                 <img
                   className=" w-full object-cover object-center border-2 border-emerald-500"
                   src={project?.images[0]}
