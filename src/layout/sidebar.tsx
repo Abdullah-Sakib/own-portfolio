@@ -28,6 +28,8 @@ const Sidebar = () => {
     "blog",
     "testimonials",
     "contact",
+    "blogs",
+    "resume",
   ];
 
   let activeSection = ScrollSpy(targetIds);

@@ -1,6 +1,6 @@
 const Resume = () => {
   return (
-    <div className="relative">
+    <div id="resume" className="relative">
       <button className="h-10 w-10 flex justify-center items-center bg-emerald-500 dark:bg-primary rounded-full cursor-pointer animate-bounce fixed top-7 sm:top-14 md:top-16 right-5 sm:right-14 md:right-24 2xl:right-56">
         <svg
           stroke="currentColor"
