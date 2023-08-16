@@ -11,31 +11,40 @@ import {
 import { AiFillFolderOpen } from "react-icons/ai";
 import { RiListSettingsLine, RiContactsLine } from "react-icons/ri";
 import { VscFeedback } from "react-icons/vsc";
-import { Link, useNavigate } from "react-router-dom";
-import ScrollSpy from "../helpers/scrollSpy";
-import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { useEffect, useMemo, useState } from "react";
 import { LuBook } from "react-icons/lu";
 import { HiOutlineDocumentText } from "react-icons/hi2";
+import ScrollSpy from "../helpers/scrollSpy";
 
 const Sidebar = () => {
   const navigate = useNavigate();
+  const [currentRoute, setCurrentRoute] = useState("/");
   const [active, setActive] = useState("");
-  const targetIds = [
-    "home",
-    "about",
-    "project",
-    "skills",
-    "blog",
-    "testimonials",
-    "contact",
-    "blogs",
-    "resume",
-  ];
+  const handleNavigate = (route: string) => {
+    navigate(route);
+  };
+  const targetIds = useMemo(
+    () => [
+      "home",
+      "about",
+      "project",
+      "skills",
+      "blog",
+      "testimonials",
+      "contact",
+      "blogs",
+      "resume",
+    ],
+    []
+  );
+  let activeSection: string = ScrollSpy(targetIds);
 
-  let activeSection = ScrollSpy(targetIds);
   useEffect(() => {
-    setActive(activeSection);
-  }, [activeSection]);
+    if (typeof activeSection === "string") {
+      setActive(activeSection);
+    }
+  }, [activeSection, setActive]);
 
   return (
     <div>
@@ -81,141 +90,138 @@ const Sidebar = () => {
 
       {/* Section navigations start */}
       <nav className="mt-3">
-        <h3 className="pl-4">Sections</h3>
-        <ul className="flex flex-col mt-4 text-sm ">
-          <a
-            href="#home"
-            onClick={() => navigate("/")}
-            className={`flex items-center duration-300 gap-5 pl-10 py-3 text-gray-700 cursor-pointer ${
-              active === "home" ? "bg-emerald-500/10" : ""
-            }`}
-          >
-            <span
-              className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300 p-[5px] ${
-                active === "home"
-                  ? "bg-emerald-400 text-white"
-                  : "bg-emerald-500/10 "
-              } dark:bg-primary `}
-            >
-              <BiHomeSmile className="text-xl" />
-            </span>
-            <span>Home</span>
-          </a>
+        {currentRoute === "/" && (
+          <>
+            <h3 className="pl-4">Sections</h3>
+            <ul className="flex flex-col mt-4 text-sm ">
+              <a
+                href="#home"
+                className={`flex items-center duration-300 gap-5 pl-10 py-3 text-gray-700 cursor-pointer ${
+                  active === "home" ? "bg-emerald-500/10" : ""
+                }`}
+              >
+                <span
+                  className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300 p-[5px] ${
+                    active === "home"
+                      ? "bg-emerald-400 text-white"
+                      : "bg-emerald-500/10 "
+                  } dark:bg-primary `}
+                >
+                  <BiHomeSmile className="text-xl" />
+                </span>
+                <span>Home</span>
+              </a>
 
-          <a
-            href="#about"
-            onClick={() => navigate("/")}
-            className={`flex items-center duration-300 gap-5 pl-10 py-3 text-gray-700 dark:text-neutral-500 ${
-              active === "about" ? "bg-emerald-500/10" : ""
-            }`}
-          >
-            <span
-              className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300 p-[5px] ${
-                active === "about"
-                  ? "bg-emerald-400 text-white"
-                  : "bg-emerald-500/10  "
-              } dark:bg-primary `}
-            >
-              <BiUserCircle className="text-2xl" />
-            </span>
-            <span>About</span>
-          </a>
+              <a
+                href="#about"
+                className={`flex items-center duration-300 gap-5 pl-10 py-3 text-gray-700 dark:text-neutral-500 ${
+                  active === "about" ? "bg-emerald-500/10" : ""
+                }`}
+              >
+                <span
+                  className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300 p-[5px] ${
+                    active === "about"
+                      ? "bg-emerald-400 text-white"
+                      : "bg-emerald-500/10  "
+                  } dark:bg-primary `}
+                >
+                  <BiUserCircle className="text-2xl" />
+                </span>
+                <span>About</span>
+              </a>
 
-          <a
-            href="#project"
-            onClick={() => navigate("/")}
-            className={`flex items-center duration-300 gap-5 pl-10 py-3 text-gray-700 dark:text-neutral-500 ${
-              active === "project" ? "bg-emerald-500/10" : ""
-            }`}
-          >
-            <span
-              className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300 p-[5px] ${
-                active === "project"
-                  ? "bg-emerald-400 text-white"
-                  : "bg-emerald-500/10 "
-              } dark:bg-primary `}
-            >
-              <AiFillFolderOpen className="text-xl" />
-            </span>
-            <span>Project</span>
-          </a>
+              <a
+                href="#project"
+                className={`flex items-center duration-300 gap-5 pl-10 py-3 text-gray-700 dark:text-neutral-500 ${
+                  active === "project" ? "bg-emerald-500/10" : ""
+                }`}
+              >
+                <span
+                  className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300 p-[5px] ${
+                    active === "project"
+                      ? "bg-emerald-400 text-white"
+                      : "bg-emerald-500/10 "
+                  } dark:bg-primary `}
+                >
+                  <AiFillFolderOpen className="text-xl" />
+                </span>
+                <span>Project</span>
+              </a>
 
-          <a
-            href="#skills"
-            onClick={() => navigate("/")}
-            className={`flex items-center duration-300 gap-5 pl-10 py-3 text-gray-700 dark:text-neutral-500 ${
-              active === "skills" ? "bg-emerald-500/10" : ""
-            }`}
-          >
-            <span
-              className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300 p-[5px] ${
-                active === "skills"
-                  ? "bg-emerald-400 text-white"
-                  : " bg-emerald-500/10"
-              } dark:bg-primary `}
-            >
-              <RiListSettingsLine className="text-xl" />
-            </span>
-            <span>Skills</span>
-          </a>
+              <a
+                href="#skills"
+                className={`flex items-center duration-300 gap-5 pl-10 py-3 text-gray-700 dark:text-neutral-500 ${
+                  active === "skills" ? "bg-emerald-500/10" : ""
+                }`}
+              >
+                <span
+                  className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300 p-[5px] ${
+                    active === "skills"
+                      ? "bg-emerald-400 text-white"
+                      : " bg-emerald-500/10"
+                  } dark:bg-primary `}
+                >
+                  <RiListSettingsLine className="text-xl" />
+                </span>
+                <span>Skills</span>
+              </a>
 
-          <a
-            href="#blog"
-            onClick={() => navigate("/")}
-            className={`flex items-center duration-300 gap-5 pl-10 py-3 text-gray-700 dark:text-neutral-500 ${
-              active === "blog" ? "bg-emerald-500/10" : ""
-            }`}
-          >
-            <span
-              className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300 p-[5px] ${
-                active === "blog"
-                  ? "bg-emerald-400 text-white"
-                  : " bg-emerald-500/10 "
-              } dark:bg-primary `}
-            >
-              <LuBook className="text-xl" />
-            </span>
-            <span>Blogs</span>
-          </a>
+              <a
+                href="#blog"
+                className={`flex items-center duration-300 gap-5 pl-10 py-3 text-gray-700 dark:text-neutral-500 ${
+                  active === "blog" ? "bg-emerald-500/10" : ""
+                }`}
+              >
+                <span
+                  className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300 p-[5px] ${
+                    active === "blog"
+                      ? "bg-emerald-400 text-white"
+                      : " bg-emerald-500/10 "
+                  } dark:bg-primary `}
+                >
+                  <LuBook className="text-xl" />
+                </span>
+                <span>Blogs</span>
+              </a>
 
-          <a
-            href="#testimonials"
-            onClick={() => navigate("/")}
-            className={`flex items-center duration-300 gap-5 pl-10 py-3 text-gray-700 dark:text-neutral-500 ${
-              active === "testimonials" ? "bg-emerald-500/10" : ""
-            }`}
-          >
-            <span
-              className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300 p-[5px] ${
-                active === "testimonials"
-                  ? "bg-emerald-400 text-white"
-                  : " bg-emerald-500/10 "
-              } dark:bg-primary `}
-            >
-              <VscFeedback className="text-xl" />
-            </span>
-            <span>Testimonials</span>
-          </a>
+              <a
+                href="#testimonials"
+                className={`flex items-center duration-300 gap-5 pl-10 py-3 text-gray-700 dark:text-neutral-500 ${
+                  active === "testimonials" ? "bg-emerald-500/10" : ""
+                }`}
+              >
+                <span
+                  className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300 p-[5px] ${
+                    active === "testimonials"
+                      ? "bg-emerald-400 text-white"
+                      : " bg-emerald-500/10 "
+                  } dark:bg-primary `}
+                >
+                  <VscFeedback className="text-xl" />
+                </span>
+                <span>Testimonials</span>
+              </a>
 
-          <a
-            href="#contact"
-            onClick={() => navigate("/")}
-            className={`flex items-center duration-300 gap-5 pl-10 py-3 text-gray-700 dark:text-neutral-500 ${
-              active === "contact" ? "bg-emerald-500/10" : ""
-            }`}
-          >
-            <span
-              className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300 p-[5px] ${
-                active === "contact"
-                  ? "bg-emerald-400 text-white"
-                  : "bg-emerald-500/10 "
-              } dark:bg-primary `}
-            >
-              <RiContactsLine className="text-xl" />
-            </span>
-            <span>Contact</span>
-          </a>
-        </ul>
+              <a
+                href="#contact"
+                className={`flex items-center duration-300 gap-5 pl-10 py-3 text-gray-700 dark:text-neutral-500 ${
+                  active === "contact" ? "bg-emerald-500/10" : ""
+                }`}
+              >
+                <span
+                  className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300 p-[5px] ${
+                    active === "contact"
+                      ? "bg-emerald-400 text-white"
+                      : "bg-emerald-500/10 "
+                  } dark:bg-primary `}
+                >
+                  <RiContactsLine className="text-xl" />
+                </span>
+                <span>Contact</span>
+              </a>
+            </ul>
+          </>
+        )}
       </nav>
       {/* Section navigations end */}
 
@@ -223,10 +229,36 @@ const Sidebar = () => {
       <div className="my-5">
         <h3 className="pl-4">Others</h3>
         <ul className="flex flex-col mt-4 text-sm " id="mainNav">
-          <Link
-            to="/resume"
-            onClick={() => setActive("resume")}
-            className={`flex items-center duration-300 gap-5 pl-10 py-3 text-black dark:text-neutral-500 ${
+          {currentRoute !== "/" && (
+            <div
+              onClick={() => {
+                handleNavigate("/");
+                setActive("home");
+                setCurrentRoute("/");
+              }}
+              className={`flex items-center duration-300 gap-5 pl-10 py-3 text-gray-700 cursor-pointer ${
+                active === "home" ? "bg-emerald-500/10" : ""
+              }`}
+            >
+              <span
+                className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300 p-[5px] ${
+                  active === "home"
+                    ? "bg-emerald-400 text-white"
+                    : "bg-emerald-500/10 "
+                } dark:bg-primary `}
+              >
+                <BiHomeSmile className="text-xl" />
+              </span>
+              <span>Home</span>
+            </div>
+          )}
+          <div
+            onClick={() => {
+              handleNavigate("/resume");
+              setActive("resume");
+              setCurrentRoute("/resume");
+            }}
+            className={`flex items-center duration-300 gap-5 pl-10 py-3 text-gray-700  cursor-pointer dark:text-neutral-500 ${
               active === "resume" ? "bg-emerald-500/10" : ""
             }`}
           >
@@ -234,19 +266,22 @@ const Sidebar = () => {
               className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300  ${
                 active === "resume"
                   ? "bg-emerald-400 text-white"
-                  : "bg-emerald-500/10  "
+                  : "bg-emerald-500/10"
               } dark:bg-primary`}
             >
               <HiOutlineDocumentText className="text-xl" />
             </span>
 
             <span>Resume</span>
-          </Link>
+          </div>
 
-          <Link
-            to="/blogs"
-            onClick={() => setActive("blogs")}
-            className={`flex duration-300 items-center gap-5 pl-10 py-3 text-black dark:text-neutral-500 mb-16  ${
+          <div
+            onClick={() => {
+              handleNavigate("/blogs");
+              setActive("blogs");
+              setCurrentRoute("/blogs");
+            }}
+            className={`flex duration-300 items-center gap-5 pl-10 py-3 text-gray-700 dark:text-neutral-500 mb-16 cursor-pointer ${
               active === "blogs" ? "bg-emerald-500/10" : ""
             }`}
           >
@@ -261,7 +296,7 @@ const Sidebar = () => {
             </span>
 
             <span>Blogs</span>
-          </Link>
+          </div>
         </ul>
       </div>
       {/* Other pages navigation end */}

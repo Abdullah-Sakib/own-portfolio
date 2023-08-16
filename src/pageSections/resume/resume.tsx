@@ -1,4 +1,9 @@
+import { useEffect } from "react";
+
 const Resume = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div id="resume" className="relative">
       <button className="h-10 w-10 flex justify-center items-center bg-emerald-500 dark:bg-primary rounded-full cursor-pointer animate-bounce fixed top-7 sm:top-14 md:top-16 right-5 sm:right-14 md:right-24 2xl:right-56">
@@ -74,7 +79,7 @@ const Resume = () => {
             </div>
             <div className="space-y-1.5 mt-3 md:mt-0">
               <p className="flex items-center md:justify-end gap-3 text-gray-700">
-                <span className="text-xs sm:text-sm">Chandpur, Bangladesh</span>
+                <span className="text-xs sm:text-sm">Comilla, Bangladesh</span>
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
@@ -91,7 +96,7 @@ const Resume = () => {
                 </svg>
               </p>
               <p className="flex items-center md:justify-end gap-3 text-gray-700">
-                <span className="text-xs sm:text-sm">+880 1829218489</span>
+                <span className="text-xs sm:text-sm">+880 1403492031</span>
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
@@ -107,7 +112,7 @@ const Resume = () => {
               </p>
               <p className="flex items-center md:justify-end gap-3 text-gray-700">
                 <span className="text-xs sm:text-sm">
-                  sujonahmed45a4@gmail.com
+                  abdullahsakib888@gmail.com
                 </span>
                 <svg
                   stroke="currentColor"
@@ -308,7 +313,7 @@ const Resume = () => {
               </li>
             </ol>
           </div>
-          <div className="mt-10 text-gray-700 text-sm">
+          {/* <div className="mt-10 text-gray-700 text-sm">
             <h2 className="text-xl font-normal bg-purple-200/50 pl-3 py-1 rounded-md text-emerald-500 ">
               Education
             </h2>
@@ -319,7 +324,7 @@ const Resume = () => {
               <span>2019 - Present</span>
             </div>
             <p>Chandpur Govt. College</p>
-          </div>
+          </div> */}
           <div className="mt-10 text-gray-700 text-sm">
             <h2 className="text-xl font-normal bg-purple-200/50 pl-3 py-1 rounded-md text-emerald-500  ">
               Language

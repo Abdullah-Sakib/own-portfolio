@@ -12,7 +12,7 @@ const NotFound = () => {
   useEffect(() => {
     setTimeout(() => {
       navigate("/");
-    }, 4000);
+    }, 2500);
   }, []);
 
   return (

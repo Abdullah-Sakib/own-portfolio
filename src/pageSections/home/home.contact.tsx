@@ -1,4 +1,4 @@
-import contact from "../../assets/animations/contact.json";
+import hi from "../../assets/animations/hi.json";
 import Lottie from "lottie-react";
 
 const HomeContact = () => {
@@ -19,7 +19,7 @@ const HomeContact = () => {
             <div className="h-96">
               <Lottie
                 className="h-full w-full"
-                animationData={contact}
+                animationData={hi}
                 loop={true}
               />
             </div>

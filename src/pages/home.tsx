@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import HomeAboutMe from "../pageSections/home/home.about-me";
 import HomeBlog from "../pageSections/home/home.blog";
 import HomeContact from "../pageSections/home/home.contact";
@@ -7,6 +8,9 @@ import HomeSkills from "../pageSections/home/home.skills";
 import HomeTestimonial from "../pageSections/home/home.testimonial";
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <HomeHeader />
