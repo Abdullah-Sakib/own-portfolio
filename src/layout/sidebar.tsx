@@ -11,7 +11,7 @@ import {
 import { AiFillFolderOpen } from "react-icons/ai";
 import { RiListSettingsLine, RiContactsLine } from "react-icons/ri";
 import { VscFeedback } from "react-icons/vsc";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { useEffect, useMemo, useState } from "react";
 import { LuBook } from "react-icons/lu";
 import { HiOutlineDocumentText } from "react-icons/hi2";
@@ -19,7 +19,7 @@ import ScrollSpy from "../helpers/scrollSpy";
 
 const Sidebar = () => {
   const navigate = useNavigate();
-  const [currentRoute, setCurrentRoute] = useState("/");
+  const location = useLocation();
   const [active, setActive] = useState("");
   const handleNavigate = (route: string) => {
     navigate(route);
@@ -90,7 +90,7 @@ const Sidebar = () => {
 
       {/* Section navigations start */}
       <nav className="mt-3">
-        {currentRoute === "/" && (
+        {location.pathname === "/" && (
           <>
             <h3 className="pl-4">Sections</h3>
             <ul className="flex flex-col mt-4 text-sm ">
@@ -229,15 +229,14 @@ const Sidebar = () => {
       <div className="my-5">
         <h3 className="pl-4">Others</h3>
         <ul className="flex flex-col mt-4 text-sm " id="mainNav">
-          {currentRoute !== "/" && (
+          {location.pathname !== "/" && (
             <div
               onClick={() => {
                 handleNavigate("/");
                 setActive("home");
-                setCurrentRoute("/");
               }}
               className={`flex items-center duration-300 gap-5 pl-10 py-3 text-gray-700 cursor-pointer ${
-                active === "home" ? "bg-emerald-500/10" : ""
+                location.pathname === "/" ? "bg-emerald-500/10" : ""
               }`}
             >
               <span
@@ -256,10 +255,9 @@ const Sidebar = () => {
             onClick={() => {
               handleNavigate("/resume");
               setActive("resume");
-              setCurrentRoute("/resume");
             }}
             className={`flex items-center duration-300 gap-5 pl-10 py-3 text-gray-700  cursor-pointer dark:text-neutral-500 ${
-              active === "resume" ? "bg-emerald-500/10" : ""
+              location.pathname === "/resume" ? "bg-emerald-500/10" : ""
             }`}
           >
             <span
@@ -279,10 +277,9 @@ const Sidebar = () => {
             onClick={() => {
               handleNavigate("/blogs");
               setActive("blogs");
-              setCurrentRoute("/blogs");
             }}
             className={`flex duration-300 items-center gap-5 pl-10 py-3 text-gray-700 dark:text-neutral-500 mb-16 cursor-pointer ${
-              active === "blogs" ? "bg-emerald-500/10" : ""
+              location.pathname === "/blogs" ? "bg-emerald-500/10" : ""
             }`}
           >
             <span

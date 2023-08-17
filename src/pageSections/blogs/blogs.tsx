@@ -38,8 +38,9 @@ const AllBlogs = () => {
       date: "2023-08-17",
     },
   ];
+  console.log(blogs);
   return (
-    <section className="text-gray-600 body-font" id="blog">
+    <section className="text-gray-600 body-font" id="blogs">
       <div className="container px-5 py-10 mx-auto">
         <div className="flex flex-wrap w-full mb-14">
           <div className=" text-center w-full mb-6 lg:mb-0">

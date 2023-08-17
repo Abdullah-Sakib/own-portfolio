@@ -6,6 +6,7 @@ import {
   BiLogoWhatsapp,
 } from "react-icons/bi";
 import { BsSendCheck, BsFacebook } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const HomeHeader = () => {
   return (
@@ -311,13 +312,13 @@ const HomeHeader = () => {
           </p>
         </div>
         <div className="flex flex-col md:flex-row items-center justify-center gap-y-3 md:gap-6 mt-6">
-          <a
+          <Link
             className="w-[170px] mx-auto md:mx-0 pl-3 pr-4 py-1  border border-emerald-500  rounded-full inline-flex justify-between items-center relative z-40 after:absolute after:h-full after:w-[27%] after:top-0 after:left-0 after:bg-emerald-500 dark:after:bg-primary after:rounded-full after:-z-10 after:transition-all after:duration-500 hover:after:w-full hover:text-white duration-300"
-            href="/resume"
+            to="/resume"
           >
             <AiOutlineEye className="text-xl text-white" />
             <span>See Resume</span>
-          </a>
+          </Link>
           <a
             href="mailto:abdullahsakib888@gmail.com"
             target="_blank"
