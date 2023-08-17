@@ -241,7 +241,7 @@ const Sidebar = () => {
             >
               <span
                 className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300 p-[5px] ${
-                  active === "home"
+                  location.pathname === "/"
                     ? "bg-emerald-400 text-white"
                     : "bg-emerald-500/10 "
                 } dark:bg-primary `}
@@ -254,7 +254,6 @@ const Sidebar = () => {
           <div
             onClick={() => {
               handleNavigate("/resume");
-              setActive("resume");
             }}
             className={`flex items-center duration-300 gap-5 pl-10 py-3 text-gray-700  cursor-pointer dark:text-neutral-500 ${
               location.pathname === "/resume" ? "bg-emerald-500/10" : ""
@@ -262,7 +261,7 @@ const Sidebar = () => {
           >
             <span
               className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300  ${
-                active === "resume"
+                location.pathname === "/resume"
                   ? "bg-emerald-400 text-white"
                   : "bg-emerald-500/10"
               } dark:bg-primary`}
@@ -276,15 +275,18 @@ const Sidebar = () => {
           <div
             onClick={() => {
               handleNavigate("/blogs");
-              setActive("blogs");
             }}
             className={`flex duration-300 items-center gap-5 pl-10 py-3 text-gray-700 dark:text-neutral-500 mb-16 cursor-pointer ${
-              location.pathname === "/blogs" ? "bg-emerald-500/10" : ""
+              location.pathname === "/blogs" ||
+              location.pathname.includes("/blog-details")
+                ? "bg-emerald-500/10"
+                : ""
             }`}
           >
             <span
               className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300  ${
-                active === "blogs"
+                location.pathname === "/blogs" ||
+                location.pathname.includes("/blog-details")
                   ? "bg-emerald-400 text-white"
                   : "bg-emerald-500/10  "
               } dark:bg-primary`}

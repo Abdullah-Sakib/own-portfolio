@@ -4,6 +4,7 @@ import NotFound from "../pages/notFound";
 import App from "../App";
 import AllBlogs from "../pageSections/blogs/blogs";
 import Resume from "../pageSections/resume/resume";
+import BlogDetails from "../pages/blogDetails";
 
 export const CustomRoutes = () => {
   return (
@@ -12,6 +13,7 @@ export const CustomRoutes = () => {
         <Route index element={<Home />} />
         <Route path="/resume" element={<Resume />} />
         <Route path="/blogs" element={<AllBlogs />} />
+        <Route path="/blog-details/:id" element={<BlogDetails />} />
       </Route>
       <Route path="*" element={<NotFound />} />
     </Routes>

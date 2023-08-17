@@ -1,6 +1,7 @@
 import { BiChevronRight } from "react-icons/bi";
 import { Badge } from "../../components/ui/badge";
 import { Button } from "../../components/ui/button";
+import { Link } from "react-router-dom";
 
 const HomeBlog = () => {
   return (
@@ -45,10 +46,12 @@ const HomeBlog = () => {
                     Distillery hexagon disrupt edison bulbche.
                   </p>
 
-                  <Button className="group w-full mt-4 bg-emerald-500 h-8 duration-300 hover:bg-emerald-600">
-                    Read more
-                    <BiChevronRight className="text-xl ml-1 mt-[3px] transition-all duration-300 group-hover:translate-x-2.5 group-hover:scale-x-110" />
-                  </Button>
+                  <Link to={`/blog-details/${item}`}>
+                    <Button className="group w-full mt-4 bg-emerald-500 h-8 duration-300 hover:bg-emerald-600">
+                      Read more
+                      <BiChevronRight className="text-xl ml-1 mt-[3px] transition-all duration-300 group-hover:translate-x-2.5 group-hover:scale-x-110" />
+                    </Button>
+                  </Link>
                 </div>
               </div>
             </div>
