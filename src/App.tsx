@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import Sidebar from "./layout/sidebar";
 import Footer from "./pageSections/shared/footer";
+import Navbar from "./pageSections/shared/navbar";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
 
       <main className="w-full lg:w-[80vw] scroll-smooth">
         <div>
+          <Navbar />
           <div className="sm:container p-2" id="scrollable-container">
             <Outlet />
           </div>

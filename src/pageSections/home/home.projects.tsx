@@ -183,7 +183,7 @@ const HomeProjects = () => {
                         <BiChevronRight className="text-xl ml-1 mt-[3px] transition-all duration-300 group-hover:translate-x-2.5 group-hover:scale-x-110" />
                       </Button>
                     </DialogTrigger>
-                    <DialogContent>
+                    <DialogContent className="bg-[#07180dc2] p-6 w-11/12 md:w-3/4 h-[80vh] md:h-[80vh] lg:w-3/4 custom-scrollbar-sidebar">
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-y-20 md:gap-10 text-gray-200 mt-10 ">
                         <div>
                           <img

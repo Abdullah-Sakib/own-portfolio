@@ -19,9 +19,9 @@ const HomeTestimonial = () => {
             <div className="h-full bg-emerald-200/10 duration-300 p-8 rounded border-2 border-emerald-500">
               <FaQuoteRight className="block w-5 h-5 text-emerald-400 mb-4" />
               <p className="leading-relaxed mb-6">
-                Working with Abdullah sakib was a pleasure. His expertise in the
+                Working with Abdullah Sakib was a pleasure. His expertise in the
                 MERN stack and attention to detail was instrumental in
-                delivering our project on time and within budget.
+                delivering our project on time with excellence.
               </p>
               <a className="inline-flex items-center">
                 <img

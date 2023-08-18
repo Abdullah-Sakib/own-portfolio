@@ -1,43 +1,96 @@
+import { useState } from "react";
+import {
+  Dialog,
+  DialogContent,
+  DialogTrigger,
+} from "../../components/ui/dialog";
+import { HiMenuAlt3 } from "react-icons/hi";
+import { Link, useLocation } from "react-router-dom";
+
 const Navbar = () => {
+  const location = useLocation();
+  const [open, setOpen] = useState(false);
   return (
-    <header className="text-gray-600 body-font">
-      <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-        <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            stroke="currentColor"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            className="w-10 h-10 text-white p-2 bg-green-500 rounded-full"
-            viewBox="0 0 24 24"
-          >
-            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
-          </svg>
-          <span className="ml-3 text-xl">Tailblocks</span>
-        </a>
-        <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
-          <a className="mr-5 hover:text-gray-900">First Link</a>
-          <a className="mr-5 hover:text-gray-900">Second Link</a>
-          <a className="mr-5 hover:text-gray-900">Third Link</a>
-          <a className="mr-5 hover:text-gray-900">Fourth Link</a>
-        </nav>
-        <button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
-          Button
-          <svg
-            fill="none"
-            stroke="currentColor"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            className="w-4 h-4 ml-1"
-            viewBox="0 0 24 24"
-          >
-            <path d="M5 12h14M12 5l7 7-7 7" />
-          </svg>
-        </button>
+    <header className="text-gray-600 body-font lg:hidden">
+      <div className="h-12 w-full px-3 backdrop-blur-xl lg:hidden flex justify-between items-center fixed top-0 z-50">
+        <img
+          src="https://avatars.githubusercontent.com/u/108396938?s=400&u=5cdd7fc9548080b1947f106179a2dc868f792aeb&v=4"
+          alt=""
+          className="h-9 w-9 rounded-full bg-gray-900"
+        />
       </div>
+
+      <Dialog>
+        <DialogTrigger
+          onClick={() => setOpen(true)}
+          className="fixed right-5 ml-auto  mt-4 z-50"
+          asChild
+        >
+          <HiMenuAlt3 className="text-xl " />
+        </DialogTrigger>
+        <DialogContent
+          className={`min-w-[92%] h-[82vh] overlay lg:hidden ${
+            open ? "block" : "hidden"
+          }  close-button bg-[#07180ded]`}
+        >
+          <div className="w-full h-full py-6 px-3  text-white rounded-md ">
+            <div className="pb-4 border-b">
+              <img
+                src="https://avatars.githubusercontent.com/u/108396938?s=400&u=5cdd7fc9548080b1947f106179a2dc868f792aeb&v=4"
+                alt="my image"
+                className="w-28 mx-auto rounded-full bg-gray-900"
+              />
+              <div className="mt-1 text-center">
+                <h3 className="text-lg font-semibold">Abdullah Sakib</h3>
+                <p className="block lg:hidden  text-sm">
+                  abdullahsakib888@gmail.com
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-col justify-center items-center gap-y-5 py-5">
+              {location.pathname === "/" && (
+                <>
+                  <p className="mt-2 ml-5 self-start">Sections :</p>
+                  <a href="/#home" onClick={() => setOpen(false)}>
+                    Home
+                  </a>
+                  <a href="/#about" onClick={() => setOpen(false)}>
+                    About
+                  </a>
+                  <a href="/#project" onClick={() => setOpen(false)}>
+                    Project
+                  </a>
+                  <a href="/#skills" onClick={() => setOpen(false)}>
+                    Skills
+                  </a>
+                  <a href="/#blog" onClick={() => setOpen(false)}>
+                    Blog
+                  </a>
+                  <a href="/#testimonials" onClick={() => setOpen(false)}>
+                    Testimonials
+                  </a>
+                  <a href="/#contact" onClick={() => setOpen(false)}>
+                    Contact
+                  </a>
+                </>
+              )}
+
+              <p className="mt-2 ml-5 self-start">Pages :</p>
+              {location.pathname !== "/" && (
+                <Link to="/" onClick={() => setOpen(false)}>
+                  Home
+                </Link>
+              )}
+              <Link to="/resume" onClick={() => setOpen(false)}>
+                Resume
+              </Link>
+              <Link to="/blogs" onClick={() => setOpen(false)}>
+                All Blogs
+              </Link>
+            </div>
+          </div>
+        </DialogContent>
+      </Dialog>
     </header>
   );
 };

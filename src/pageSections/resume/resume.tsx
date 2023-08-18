@@ -268,7 +268,7 @@ const Resume = () => {
                 <div className="flex flex-col md:flex-row md:items-center justify-between mb-2">
                   <p>
                     <span className="text-gray-800 font-semibold text-lg">
-                      Rakib Consultancy
+                      Sakib Consultancy
                     </span>{" "}
                     - Law &amp; tax related services website
                   </p>
