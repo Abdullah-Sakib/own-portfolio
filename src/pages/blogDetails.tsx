@@ -5,7 +5,7 @@ const BlogDetails = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div className="min-h-screen  my-8 px-4 md:px-0">
+    <div className="min-h-screen  my-8 pt-10 lg:pt-0 px-4 md:px-0">
       <header className="bg-emerald-500 text-white py-4 rounded-lg">
         <div className="container mx-auto">
           <h1 className="text-2xl font-semibold">

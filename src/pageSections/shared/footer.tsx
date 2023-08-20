@@ -4,24 +4,24 @@ import {
   BiLogoLinkedin,
   BiLogoTwitter,
 } from "react-icons/bi";
+import {
+  Avatar,
+  AvatarFallback,
+  AvatarImage,
+} from "../../components/ui/avatar";
 
 const Footer = () => {
   return (
     <footer className="text-gray-600 body-font">
       <div className="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
         <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            stroke="currentColor"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            className="w-10 h-10 text-white p-2 bg-emerald-500 rounded-full"
-            viewBox="0 0 24 24"
-          >
-            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
-          </svg>
+          <Avatar className="w-10 h-10 bg-gray-900 mx-auto   ">
+            <AvatarImage
+              src="https://avatars.githubusercontent.com/u/108396938?s=400&u=5cdd7fc9548080b1947f106179a2dc868f792aeb&v=4"
+              alt="@shadcn"
+            />
+            <AvatarFallback>AS</AvatarFallback>
+          </Avatar>
           <span className="ml-3 text-xl">Abdullah Sakib</span>
         </a>
         <p className="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">

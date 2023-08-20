@@ -6,7 +6,7 @@ const HomeAboutMe = () => {
   return (
     <section
       id="about"
-      className="min-h-full flex items-center sm:mb-0 pt-20 sm:pt-0 overflow-x-hidden"
+      className="min-h-full flex items-center sm:mb-0  sm:pt-0 overflow-x-hidden"
     >
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-col text-center w-full">
@@ -21,7 +21,7 @@ const HomeAboutMe = () => {
           </h1>
         </div>
 
-        <div className="grid grid-cols-12 items-center w-full px-3 lg:pr-5">
+        <div className="grid grid-cols-12 items-center w-full px-0 sm:px-3 lg:pr-5">
           <div className="col-span-12 lg:col-span-5">
             <div>
               <Lottie animationData={dev} loop={true} />

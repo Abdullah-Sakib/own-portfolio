@@ -13,11 +13,13 @@ const Navbar = () => {
   return (
     <header className="text-gray-600 body-font lg:hidden">
       <div className="h-12 w-full px-3 backdrop-blur-xl lg:hidden flex justify-between items-center fixed top-0 z-50">
-        <img
-          src="https://avatars.githubusercontent.com/u/108396938?s=400&u=5cdd7fc9548080b1947f106179a2dc868f792aeb&v=4"
-          alt=""
-          className="h-9 w-9 rounded-full bg-gray-900"
-        />
+        <Link to="/">
+          <img
+            src="https://avatars.githubusercontent.com/u/108396938?s=400&u=5cdd7fc9548080b1947f106179a2dc868f792aeb&v=4"
+            alt=""
+            className="h-9 w-9 rounded-full bg-gray-900"
+          />
+        </Link>
       </div>
 
       <Dialog>
@@ -26,7 +28,9 @@ const Navbar = () => {
           className="fixed right-5 ml-auto  mt-4 z-50"
           asChild
         >
-          <HiMenuAlt3 className="text-xl " />
+          <span>
+            <HiMenuAlt3 className="text-xl " />
+          </span>
         </DialogTrigger>
         <DialogContent
           className={`min-w-[92%] h-[82vh] overlay lg:hidden ${

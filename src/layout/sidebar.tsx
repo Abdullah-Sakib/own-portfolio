@@ -53,7 +53,7 @@ const Sidebar = () => {
           src="https://avatars.githubusercontent.com/u/108396938?s=400&u=5cdd7fc9548080b1947f106179a2dc868f792aeb&v=4"
           alt="@shadcn"
         />
-        <AvatarFallback>CN</AvatarFallback>
+        <AvatarFallback>AS</AvatarFallback>
       </Avatar>
       <h2 className="text-center text-lg font-semibold mt-2">Abdullah Sakib</h2>
       <p className="text-center">abdullahsakib888@gmail.com</p>
