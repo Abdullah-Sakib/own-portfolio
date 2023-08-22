@@ -114,8 +114,8 @@ const HomeSkills = () => {
   ];
   return (
     <section className="text-gray-600 body-font" id="skills">
-      <div className="container px-5 py-24 mx-auto">
-        <div className="flex flex-wrap w-full mb-10 sm:mb-20">
+      <div className="container px-5 py-10 sm:py-24 mx-auto">
+        <div className="flex flex-wrap w-full mb-12 sm:mb-20">
           <div className="w-full mb-6 lg:mb-0">
             <h1
               className="text-center font-extrabold text-4xl sm:text-5xl uppercase text-gray-700 pt-4"

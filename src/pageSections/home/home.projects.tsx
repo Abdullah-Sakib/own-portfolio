@@ -141,7 +141,7 @@ const HomeProjects = () => {
 
   return (
     <section className="text-gray-600 body-font" id="project">
-      <div className="container px-5 py-24 mx-auto">
+      <div className="container px-5 py-10 sm:py-24 mx-auto">
         <div className="flex flex-wrap w-full mb-8 sm:mb-20">
           <div className="w-full mb-6 lg:mb-0">
             <h1

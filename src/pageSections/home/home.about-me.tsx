@@ -6,9 +6,9 @@ const HomeAboutMe = () => {
   return (
     <section
       id="about"
-      className="min-h-full flex items-center sm:mb-0  sm:pt-0 overflow-x-hidden"
+      className="min-h-full flex items-center sm:mb-0 sm:pt-0 overflow-x-hidden"
     >
-      <div className="container px-5 py-24 mx-auto">
+      <div className="container px-5 py-10 sm:py-24 mx-auto">
         <div className="flex flex-col text-center w-full">
           <h2 className="text-sm text-green-500 tracking-widest font-medium title-font ">
             <ImMagicWand className="inline-block text-base" /> Lumos Maxima

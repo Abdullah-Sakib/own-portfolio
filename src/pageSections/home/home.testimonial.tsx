@@ -5,9 +5,9 @@ import threew from "../../assets/3w.png";
 const HomeTestimonial = () => {
   return (
     <section className="text-gray-600 body-font " id="testimonials">
-      <div className="container px-5 py-24 mx-auto">
+      <div className="container px-5 py-10 sm:py-24 mx-auto">
         <h1
-          className="text-center font-extrabold text-4xl sm:text-5xl mb-8 sm:mb-20  uppercase text-gray-700 pt-4"
+          className="text-center font-extrabold text-4xl sm:text-5xl mb-12 sm:mb-20  uppercase text-gray-700 pt-4"
           style={{ transform: "none" }}
         >
           <span className="text-emerald-500 dark:text-primary">

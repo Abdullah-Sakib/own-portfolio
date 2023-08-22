@@ -5,11 +5,11 @@ const HomeContact = () => {
   return (
     <section
       id="contact"
-      className="min-h-full flex justify-center items-center pt-20 mb-24  px-3 sm:px-0 overflow-x-hidden"
+      className="min-h-full flex justify-center items-center pt-10 sm:pt-20 mb-10 sm:mb-24  px-3 sm:px-0 overflow-x-hidden"
     >
       <div>
         <h1
-          className="text-center font-extrabold text-4xl sm:text-5xl uppercase text-gray-700  mb-10 pt-4"
+          className="text-center font-extrabold text-4xl sm:text-5xl uppercase text-gray-700 pb-12 md:pb-8 pt-4"
           style={{ transform: "none" }}
         >
           <span className="text-emerald-500 dark:text-primary">Contact</span> me
