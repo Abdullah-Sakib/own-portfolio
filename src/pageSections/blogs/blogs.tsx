@@ -2,9 +2,13 @@ import { BiChevronRight } from "react-icons/bi";
 import { Badge } from "../../components/ui/badge";
 import { Button } from "../../components/ui/button";
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import Filter from "../../components/filter";
 
 const AllBlogs = () => {
+  const [open, setOpen] = useState(false);
+  const [value, setValue] = useState("");
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -44,11 +48,39 @@ const AllBlogs = () => {
     },
   ];
   console.log(blogs);
+
+  const frameworks = [
+    {
+      value: "all",
+      label: "All",
+    },
+    {
+      value: "next.js",
+      label: "Next.js",
+    },
+    {
+      value: "sveltekit",
+      label: "SvelteKit",
+    },
+    {
+      value: "nuxt.js",
+      label: "Nuxt.js",
+    },
+    {
+      value: "remix",
+      label: "Remix",
+    },
+    {
+      value: "astro",
+      label: "Astro",
+    },
+  ];
+
   return (
     <section className="text-gray-600 body-font" id="blogs">
       <div className="container px-5 py-10 mx-auto">
-        <div className="flex flex-wrap w-full mb-14">
-          <div className=" text-center w-full mb-6 lg:mb-0">
+        <div className="flex flex-wrap w-full mb-8">
+          <div className=" text-center w-full">
             <h1
               className="text-center font-extrabold text-4xl sm:text-5xl uppercase text-gray-700 pt-4"
               style={{ transform: "none" }}
@@ -57,6 +89,19 @@ const AllBlogs = () => {
               Blogs
             </h1>
           </div>
+        </div>
+
+        {/* Filtering section  */}
+        <div className="flex justify-center sm:justify-start items-center mb-10">
+          <Filter
+            open={open}
+            setOpen={setOpen}
+            value={value}
+            setValue={setValue}
+            filterOptions={frameworks}
+            lable="Filter by category"
+            inputPlaceholder="Search categories..."
+          />
         </div>
 
         <div className="flex flex-wrap -m-4">

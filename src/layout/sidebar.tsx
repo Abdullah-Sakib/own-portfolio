@@ -35,6 +35,7 @@ const Sidebar = () => {
       "contact",
       "blogs",
       "resume",
+      "projects",
     ],
     []
   );
@@ -274,6 +275,26 @@ const Sidebar = () => {
 
           <div
             onClick={() => {
+              handleNavigate("/projects");
+            }}
+            className={`flex duration-300 items-center gap-5 pl-10 py-3 text-gray-700 dark:text-neutral-500   cursor-pointer ${
+              location.pathname === "/projects" ? "bg-emerald-500/10" : ""
+            }`}
+          >
+            <span
+              className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300  ${
+                location.pathname === "/projects"
+                  ? "bg-emerald-400 text-white"
+                  : "bg-emerald-500/10  "
+              } dark:bg-primary`}
+            >
+              <AiFillFolderOpen className="text-xl" />
+            </span>
+            <span>All Projects</span>
+          </div>
+
+          <div
+            onClick={() => {
               handleNavigate("/blogs");
             }}
             className={`flex duration-300 items-center gap-5 pl-10 py-3 text-gray-700 dark:text-neutral-500 mb-16 cursor-pointer ${
@@ -293,8 +314,7 @@ const Sidebar = () => {
             >
               <LuBook className="text-xl" />
             </span>
-
-            <span>Blogs</span>
+            <span>All Blogs</span>
           </div>
         </ul>
       </div>

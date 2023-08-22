@@ -25,15 +25,15 @@ const Navbar = () => {
       <Dialog>
         <DialogTrigger
           onClick={() => setOpen(true)}
-          className="fixed right-5 ml-auto  mt-4 z-50"
+          className="fixed right-5 ml-auto mt-3 z-50"
           asChild
         >
           <span>
-            <HiMenuAlt3 className="text-xl " />
+            <HiMenuAlt3 className="text-2xl " />
           </span>
         </DialogTrigger>
         <DialogContent
-          className={`min-w-[92%] h-[82vh] overlay lg:hidden ${
+          className={`min-w-[92%] h-[82vh] overlay lg:hidden custom-scrollbar-sidebar ${
             open ? "block" : "hidden"
           }  close-button bg-[#07180ded]`}
         >
@@ -87,6 +87,9 @@ const Navbar = () => {
               )}
               <Link to="/resume" onClick={() => setOpen(false)}>
                 Resume
+              </Link>
+              <Link to="/projects" onClick={() => setOpen(false)}>
+                All Projects
               </Link>
               <Link to="/blogs" onClick={() => setOpen(false)}>
                 All Blogs

@@ -7,7 +7,7 @@ const HomeBlog = () => {
   return (
     <section className="text-gray-600 body-font" id="blog">
       <div className="container px-5 py-24 mx-auto">
-        <div className="flex flex-wrap w-full mb-14">
+        <div className="flex flex-wrap w-full mb-8 sm:mb-20">
           <div className=" text-center w-full mb-6 lg:mb-0">
             <h1
               className="text-center font-extrabold text-4xl sm:text-5xl uppercase text-gray-700 pt-4"
@@ -24,7 +24,7 @@ const HomeBlog = () => {
             <div key={item} className="xl:w-1/3 md:w-1/2 p-4">
               <div className="rounded-lg">
                 <img
-                  className="h-48 border-2 border-emerald-500 w-full object-cover object-center"
+                  className="h-48 rounded-sm border-2 border-emerald-500 w-full object-cover object-center"
                   src="https://images.unsplash.com/photo-1526498460520-4c246339dccb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bmV4dCUyMGpzfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
                   alt="content"
                 />

@@ -142,7 +142,7 @@ const HomeProjects = () => {
   return (
     <section className="text-gray-600 body-font" id="project">
       <div className="container px-5 py-24 mx-auto">
-        <div className="flex flex-wrap w-full mb-20">
+        <div className="flex flex-wrap w-full mb-8 sm:mb-20">
           <div className="w-full mb-6 lg:mb-0">
             <h1
               className="text-center font-extrabold text-4xl sm:text-5xl uppercase text-gray-700 pt-4"
@@ -159,7 +159,7 @@ const HomeProjects = () => {
             <div key={idx} className="p-4 md:w-1/4">
               <div className="h-full overflow-hidden">
                 <img
-                  className=" w-full object-cover object-center border-2 border-emerald-500"
+                  className="rounded-sm w-full object-cover object-center border-2 border-emerald-500"
                   src={project?.images[0]}
                   alt="blog"
                 />

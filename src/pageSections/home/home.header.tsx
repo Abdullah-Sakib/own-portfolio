@@ -179,7 +179,7 @@ const HomeHeader = () => {
                   b
                 </span>
               </h1>
-              <h1 className="text-5xl mt-4 lg:text-7xl font-extrabold text-gray-700">
+              <h1 className="text-5xl sm:text-5xl mt-4 lg:text-7xl font-extrabold text-gray-700">
                 <span
                   className="inline-block false"
                   style={{ opacity: 1, transform: "none" }}

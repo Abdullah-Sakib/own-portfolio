@@ -115,8 +115,8 @@ const HomeSkills = () => {
   return (
     <section className="text-gray-600 body-font" id="skills">
       <div className="container px-5 py-24 mx-auto">
-        <div className="flex flex-wrap w-full mb-20">
-          <div className=" w-full mb-6 lg:mb-0">
+        <div className="flex flex-wrap w-full mb-10 sm:mb-20">
+          <div className="w-full mb-6 lg:mb-0">
             <h1
               className="text-center font-extrabold text-4xl sm:text-5xl uppercase text-gray-700 pt-4"
               style={{ transform: "none" }}
@@ -126,11 +126,11 @@ const HomeSkills = () => {
             </h1>
           </div>
         </div>
-        <div className="flex flex-wrap justify-between gap-3 -m-4 ">
+        <div className="flex flex-wrap justify-center sm:justify-between gap-4 sm:gap-3 -m-4 ">
           {skills.map((skill, i) => (
             <div
               key={i}
-              className="w-20 p-2 shadow-md cursor-pointer rounded-lg bg-gray-200/50"
+              className="w-16 sm:w-20 pb-2 sm:p-2 shadow-md cursor-pointer rounded-lg bg-gray-200/50"
             >
               <a className="block h-4/6 relative p-2 overflow-hidden">
                 <img
@@ -140,7 +140,7 @@ const HomeSkills = () => {
                 />
               </a>
               <div className="mt-3 text-center">
-                <h3 className="text-gray-500 text-[13px]  title-font mb-1">
+                <h3 className="text-gray-500 text-[11px] sm:text-[13px]   title-font  ">
                   {skill.name}
                 </h3>
               </div>
