@@ -126,21 +126,21 @@ const HomeSkills = () => {
             </h1>
           </div>
         </div>
-        <div className="flex flex-wrap justify-center sm:justify-between gap-4 sm:gap-3 -m-4 ">
+        <div className="flex flex-wrap justify-center gap-4 sm:gap-3 -m-4 ">
           {skills.map((skill, i) => (
             <div
               key={i}
-              className="w-16 sm:w-20 pb-2 sm:p-2 shadow-md cursor-pointer rounded-lg bg-gray-200/50"
+              className="w-16 sm:w-20 pb-2 sm:p-2 cursor-pointer rounded-lg bg-gray-200/50 "
             >
               <a className="block h-4/6 relative p-2 overflow-hidden">
                 <img
-                  alt="ecommerce"
+                  alt="skills_icons"
                   className="object-contain object-center rounded-lg w-full h-full block "
                   src={skill.image}
                 />
               </a>
               <div className="mt-3 text-center">
-                <h3 className="text-gray-500 text-[11px] sm:text-[13px]   title-font  ">
+                <h3 className="text-gray-500 text-[11px] sm:text-[13px]  title-font  ">
                   {skill.name}
                 </h3>
               </div>

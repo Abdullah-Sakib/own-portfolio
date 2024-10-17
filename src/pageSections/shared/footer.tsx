@@ -25,7 +25,7 @@ const Footer = () => {
           <span className="ml-3 text-xl">Abdullah Sakib</span>
         </a>
         <p className="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
-          © 2023 Abdullah Sakib —
+          © {new Date().getFullYear()} Abdullah Sakib —
           <a
             href="https://twitter.com/Abdulla58425718"
             className="text-gray-600 ml-1"

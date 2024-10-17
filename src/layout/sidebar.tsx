@@ -62,7 +62,7 @@ const Sidebar = () => {
       {/* Social links  start*/}
       <div className="flex justify-around py-5 border-b-[1px] ">
         <a href="https://web.facebook.com/abdullah.sakib.77715" target="_blank">
-          <div className="p-2 border-2 rounded-full hover:border-green-400 hover:text-green-400 duration-300 cursor-pointer">
+          <div className="p-2 border-2 rounded-full hover:border-green-400 hover:text-green-400 duration-300 cursor-pointer ">
             <BiLogoFacebook className="text-xl " />
           </div>
         </a>
@@ -97,10 +97,11 @@ const Sidebar = () => {
             <ul className="flex flex-col mt-4 text-sm ">
               <a
                 href="#home"
-                className={`flex items-center duration-300 gap-5 pl-10 py-3 text-gray-700 cursor-pointer ${
-                  active === "home" ? "bg-emerald-500/10" : ""
+                className={`flex items-center duration-300 gap-5 pl-10 py-3 text-gray-700 cursor-pointer relative ${
+                  active === "home" ? "bg-emerald-500/10 " : ""
                 }`}
               >
+                <div className={` h-full  absolute left-0 top-0 rounded-r-sm duration-500 transition-all  ${active === "home" ? " w-1.5 bg-emerald-400" : " w-0 "}`}/>
                 <span
                   className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300 p-[5px] ${
                     active === "home"
@@ -115,10 +116,11 @@ const Sidebar = () => {
 
               <a
                 href="#about"
-                className={`flex items-center duration-300 gap-5 pl-10 py-3 text-gray-700 dark:text-neutral-500 ${
+                className={`flex items-center duration-300 gap-5 pl-10 py-3 text-gray-700 dark:text-neutral-500 relative ${
                   active === "about" ? "bg-emerald-500/10" : ""
                 }`}
               >
+                <div className={`h-full  absolute left-0 top-0 rounded-r-sm duration-500 transition-all  ${active === "about" ? " w-1.5 bg-emerald-400" : " w-0 "}`}/>
                 <span
                   className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300 p-[5px] ${
                     active === "about"
@@ -133,10 +135,11 @@ const Sidebar = () => {
 
               <a
                 href="#project"
-                className={`flex items-center duration-300 gap-5 pl-10 py-3 text-gray-700 dark:text-neutral-500 ${
+                className={`flex items-center duration-300 gap-5 pl-10 py-3 text-gray-700 dark:text-neutral-500 relative ${
                   active === "project" ? "bg-emerald-500/10" : ""
                 }`}
               >
+                <div className={` h-full  absolute left-0 top-0 rounded-r-sm duration-500 transition-all  ${active === "project" ? "w-1.5 bg-emerald-400" : " w-0 "}`}/>
                 <span
                   className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300 p-[5px] ${
                     active === "project"
@@ -151,10 +154,11 @@ const Sidebar = () => {
 
               <a
                 href="#skills"
-                className={`flex items-center duration-300 gap-5 pl-10 py-3 text-gray-700 dark:text-neutral-500 ${
+                className={`flex items-center duration-300 gap-5 pl-10 py-3 text-gray-700 dark:text-neutral-500 relative ${
                   active === "skills" ? "bg-emerald-500/10" : ""
                 }`}
               >
+                <div className={` h-full  absolute left-0 top-0 rounded-r-sm duration-500 transition-all  ${active === "skills" ? "w-1.5 bg-emerald-400" : " w-0 "}`}/>
                 <span
                   className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300 p-[5px] ${
                     active === "skills"
@@ -169,10 +173,11 @@ const Sidebar = () => {
 
               <a
                 href="#blog"
-                className={`flex items-center duration-300 gap-5 pl-10 py-3 text-gray-700 dark:text-neutral-500 ${
+                className={`flex items-center duration-300 gap-5 pl-10 py-3 text-gray-700 dark:text-neutral-500 relative ${
                   active === "blog" ? "bg-emerald-500/10" : ""
                 }`}
               >
+                <div className={` h-full  absolute left-0 top-0 rounded-r-sm duration-500 transition-all  ${active === "blog" ? "w-1.5 bg-emerald-400" : " w-0 "}`}/>
                 <span
                   className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300 p-[5px] ${
                     active === "blog"
@@ -187,10 +192,11 @@ const Sidebar = () => {
 
               <a
                 href="#testimonials"
-                className={`flex items-center duration-300 gap-5 pl-10 py-3 text-gray-700 dark:text-neutral-500 ${
+                className={`flex items-center duration-300 gap-5 pl-10 py-3 text-gray-700 dark:text-neutral-500 relative ${
                   active === "testimonials" ? "bg-emerald-500/10" : ""
                 }`}
               >
+               <div className={` h-full  absolute left-0 top-0 rounded-r-sm duration-500 transition-all  ${active === "testimonials" ? "w-1.5 bg-emerald-400" : " w-0 "}`}/>
                 <span
                   className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300 p-[5px] ${
                     active === "testimonials"
@@ -205,10 +211,11 @@ const Sidebar = () => {
 
               <a
                 href="#contact"
-                className={`flex items-center duration-300 gap-5 pl-10 py-3 text-gray-700 dark:text-neutral-500 ${
+                className={`flex items-center duration-300 gap-5 pl-10 py-3 text-gray-700 dark:text-neutral-500 relative ${
                   active === "contact" ? "bg-emerald-500/10" : ""
                 }`}
               >
+                <div className={` h-full  absolute left-0 top-0 rounded-r-sm duration-500 transition-all  ${active === "contact" ? "w-1.5 bg-emerald-400" : " w-0 "}`}/>
                 <span
                   className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300 p-[5px] ${
                     active === "contact"
@@ -236,10 +243,11 @@ const Sidebar = () => {
                 handleNavigate("/");
                 setActive("home");
               }}
-              className={`flex items-center duration-300 gap-5 pl-10 py-3 text-gray-700 cursor-pointer ${
+              className={`flex items-center duration-300 gap-5 pl-10 py-3 text-gray-700 cursor-pointer relative ${
                 location.pathname === "/" ? "bg-emerald-500/10" : ""
               }`}
             >
+              <div className={` h-full  absolute left-0 top-0 rounded-r-sm duration-500 transition-all  ${location.pathname === "/" ? "w-1.5 bg-emerald-400" : " w-0 "}`}/>
               <span
                 className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300 p-[5px] ${
                   location.pathname === "/"
@@ -256,10 +264,11 @@ const Sidebar = () => {
             onClick={() => {
               handleNavigate("/resume");
             }}
-            className={`flex items-center duration-300 gap-5 pl-10 py-3 text-gray-700  cursor-pointer dark:text-neutral-500 ${
+            className={`flex items-center duration-300 gap-5 pl-10 py-3 text-gray-700  cursor-pointer dark:text-neutral-500 relative ${
               location.pathname === "/resume" ? "bg-emerald-500/10" : ""
             }`}
           >
+            <div className={` h-full  absolute left-0 top-0 rounded-r-sm duration-500 transition-all  ${location.pathname === "/resume" ? "w-1.5 bg-emerald-400" : " w-0 "}`}/>
             <span
               className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300  ${
                 location.pathname === "/resume"
@@ -269,7 +278,6 @@ const Sidebar = () => {
             >
               <HiOutlineDocumentText className="text-xl" />
             </span>
-
             <span>Resume</span>
           </div>
 
@@ -277,10 +285,11 @@ const Sidebar = () => {
             onClick={() => {
               handleNavigate("/projects");
             }}
-            className={`flex duration-300 items-center gap-5 pl-10 py-3 text-gray-700 dark:text-neutral-500   cursor-pointer ${
+            className={`flex duration-300 items-center gap-5 pl-10 py-3 text-gray-700 dark:text-neutral-500  cursor-pointer relative ${
               location.pathname === "/projects" ? "bg-emerald-500/10" : ""
             }`}
           >
+            <div className={` h-full  absolute left-0 top-0 rounded-r-sm duration-500 transition-all  ${location.pathname === "/projects" ? "w-1.5 bg-emerald-400" : " w-0 "}`}/>
             <span
               className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300  ${
                 location.pathname === "/projects"
@@ -297,13 +306,15 @@ const Sidebar = () => {
             onClick={() => {
               handleNavigate("/blogs");
             }}
-            className={`flex duration-300 items-center gap-5 pl-10 py-3 text-gray-700 dark:text-neutral-500 mb-16 cursor-pointer ${
+            className={`flex duration-300 items-center gap-5 pl-10 py-3 text-gray-700 dark:text-neutral-500 mb-16 cursor-pointer relative ${
               location.pathname === "/blogs" ||
               location.pathname.includes("/blog-details")
                 ? "bg-emerald-500/10"
                 : ""
             }`}
           >
+            <div className={` h-full  absolute left-0 top-0 rounded-r-sm duration-500 transition-all  ${location.pathname === "/blogs" ||
+              location.pathname.includes("/blog-details") ? "w-1.5 bg-emerald-400" : " w-0 "}`}/>
             <span
               className={`h-7 w-7 flex justify-center items-center rounded-lg transition-all duration-300  ${
                 location.pathname === "/blogs" ||
